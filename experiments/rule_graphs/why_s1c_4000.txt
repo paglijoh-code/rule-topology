@@ -1,0 +1,34 @@
+offset2 + shift2 cells min(a,b)<1: bounded 0.00/None
+offset2 + shift2 cells min(a,b)<2: bounded 0.00/None
+offset2 + shift2 cells min(a,b)<3: bounded 0.00/None
+offset2 + shift2 cells min(a,b)<4: bounded 0.00/None
+offset2 + shift2 cells min(a,b)<6: growing 0.50/19
+offset2 + shift2 cells min(a,b)<8: growing 0.50/19
+offset2 + shift2 cells min(a,b)<10: growing 0.50/19
+offset2 + shift2 cells min(a,b)<12: growing 0.50/19
+offset2 + shift2 row/col 0 only: bounded 0.00/None
+offset2 + shift2 row/col 1 only: bounded 0.00/None
+offset2 + shift2 row/col 2 only: bounded 0.00/None
+offset2 + shift2 row/col 3 only: bounded 0.00/None
+offset2 + shift2 row/col 4 only: bounded 0.00/None
+offset2 + shift2 row/col 5 only: growing 0.49/19
+offset2 + shift2 row/col 6 only: bounded 0.00/None
+offset2 + shift2 row/col 7 only: bounded 0.00/None
+offset2 + shift2 row/col 8 only: bounded 0.00/None
+offset2 + shift2 row/col 9 only: bounded 0.00/None
+offset2 + shift2 row/col 10 only: bounded 0.00/None
+offset2 + shift2 row/col 11 only: bounded 0.00/None
+row 0 of shift tables (P columns b < 40):
+  delta 0: [0, 1, 8, 13, 18, 23, 28, 33, 38]
+  delta 1: [1, 2, 9, 14, 19, 24, 29, 34, 39]
+  delta 2: [2, 3, 10, 15, 20, 25, 30, 35]
+  delta 3: [3, 4, 11, 16, 21, 26, 31, 36]
+  delta 4: [4, 5, 12, 17, 22, 27, 32, 37]
+  delta 5: [5, 6, 13, 18, 23, 28, 33, 38]
+  delta 6: [6, 7, 14, 19, 24, 29, 34, 39]
+  delta 7: [7, 8, 15, 20, 25, 30, 35]
+  delta 8: [8, 9, 16, 21, 26, 31, 36]
+  delta 9: [9, 10, 17, 22, 27, 32, 37]
+row 0 of offset2: [2, 7, 12, 17, 22, 27, 32, 37]
+all-N + shift2 cells min(a,b)<2: bounded 0.00/None
+all-N + shift2 cells min(a,b)<12: bounded 0.00/None

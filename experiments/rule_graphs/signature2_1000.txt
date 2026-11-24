@@ -1,0 +1,5 @@
+N 1000 chains 3556 distinct (B,C) 1651
+distinct tables with any P cell on the diagonal: {False: 1651}
+distinct tables by shape: {'matching': 338, 'other': 1313}
+  matching  chains   777  wall survives   18 (2.3%)
+  other     chains  2779  wall survives   69 (2.5%)

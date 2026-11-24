@@ -1,0 +1,46 @@
+g[:20] 00112233041520314203
+row 5, delta 0: [4, 5, 12, 17, 22, 27, 32, 37, 42]
+row 5, delta 1: [4, 6, 13, 18, 23, 28, 33, 38, 43]
+row 5, delta 2: [2, 3, 7, 14, 19, 24, 29, 34, 39, 44]
+row 5, delta 3: [2, 8, 15, 20, 25, 30, 35, 40]
+row 5, delta 4: [0, 1, 9, 16, 21, 26, 31, 36, 41]
+row 5, delta 5: [0, 10, 17, 22, 27, 32, 37, 42]
+row 5, delta 6: [11, 18, 23, 28, 33, 38, 43]
+row 5, delta 7: [12, 19, 24, 29, 34, 39, 44]
+row 5, delta 8: [13, 20, 25, 30, 35, 40]
+row 5, delta 9: [14, 21, 26, 31, 36, 41]
+row 5, offset2: [3, 7, 12, 17, 22, 27, 32, 37, 42]
+row 5 shift2 xor offset2: [2, 12, 14, 17, 19, 22, 24, 27, 29, 32, 34, 37, 39, 42, 44, 47, 49, 52, 54, 57]
+offset2 with cell (5,2) flipped: bounded 0.00/None
+offset2 with cell (5,12) flipped: bounded 0.00/None
+offset2 with cell (5,14) flipped: bounded 0.00/None
+offset2 with cell (5,17) flipped: bounded 0.00/None
+offset2 with cell (5,19) flipped: bounded 0.00/None
+offset2 with cell (5,22) flipped: bounded 0.00/None
+offset2 with cell (5,24) flipped: bounded 0.00/None
+offset2 with cell (5,27) flipped: bounded 0.00/None
+offset2 with cell (5,29) flipped: bounded 0.00/None
+offset2 with cell (5,32) flipped: bounded 0.00/None
+offset2 with cell (5,34) flipped: bounded 0.00/None
+offset2 with cell (5,37) flipped: bounded 0.00/None
+offset2 with cell (5,39) flipped: bounded 0.00/None
+offset2 with cell (5,42) flipped: bounded 0.00/None
+offset2 with cell (5,44) flipped: bounded 0.00/None
+offset2 with cell (5,47) flipped: bounded 0.00/None
+offset2 with cell (5,49) flipped: bounded 0.00/None
+offset2 with cell (5,52) flipped: bounded 0.00/None
+offset2 with cell (5,54) flipped: bounded 0.00/None
+offset2 with cell (5,57) flipped: bounded 0.00/None
+offset2 with cell (5,59) flipped: bounded 0.00/None
+offset2 + P at (5,0): bounded 0.00/None
+offset2 + P at (5,1): bounded 0.00/None
+offset2 + P at (5,2): bounded 0.00/None
+offset2 + P at (5,3): bounded 0.00/None
+offset2 + P at (5,4): bounded 0.00/None
+offset2 + P at (5,5): bounded 0.00/None
+offset2 + P at (5,6): bounded 0.00/None
+offset2 + P at (5,7): bounded 0.00/None
+offset2 + P at (5,8): bounded 0.00/None
+offset2 + P at (5,9): bounded 0.00/None
+offset2 + P at (5,10): bounded 0.00/None
+offset2 + P at (5,11): bounded 0.00/None

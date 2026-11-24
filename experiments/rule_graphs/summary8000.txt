@@ -1,0 +1,35 @@
+N = 8000  total 2190
+
+kind by type (survival = kind growing or linear; sqrt-like = growing with alpha in [0.4,0.6])
+type    n  none bounded slow noperiod linear growing  sqrt-like  growing%
+chain    327     0      84     0      180     26      37          6     19.3
+pre     1809     0      28     1       77     32    1671       1098     94.1
+cycle     12     0       0     0        0      0      12         10    100.0
+branch    18     0       2     0        3      4       9          8     72.2
+rand      24     0      10     0        8      4       2          0     25.0
+
+exponent histogram (growing only; headline alpha)
+bin           edge   chain     pre   cycle  branch    rand
+[0.00,0.10)       0       7      62       1       1       1
+[0.10,0.20)       0       0      59       0       0       0
+[0.20,0.30)       0       0      19       0       0       1
+[0.30,0.40)       0       1      42       0       0       0
+[0.40,0.45)       0       0      78       0       3       0
+[0.45,0.55)       0       6     820       9       4       0
+[0.55,0.60)       0       0     200       1       1       0
+[0.60,0.70)       0       0     129       0       0       0
+[0.70,0.90)       0       3     100       1       0       0
+[0.90,1.10)       0      15      62       0       0       0
+[1.10,9.00)       0       5     100       0       0       0
+
+bfit (alpha_bfit, growing, >=8 rounds) histogram
+[0.00,0.30)       0       1     178       1       0       1
+[0.30,0.40)       0       1      29       0       0       0
+[0.40,0.45)       0       5      18       0       0       0
+[0.45,0.55)       0       1     959       9       8       0
+[0.55,0.65)       0       1      50       1       0       0
+[0.65,1.10)       0      17     155       1       0       0
+[1.10,9.00)       0       0       0       0       0       0
+growing with <8 rounds (no bfit): edge:0 chain:11 pre:282 cycle:0 branch:1 rand:1
+
+candidates: 975  by type: {'chain': 200, 'pre': 759, 'cycle': 2, 'branch': 4, 'rand': 10}  by kind: {'noperiod': 268, 'growing': 706, 'slow': 1}

@@ -1,0 +1,20 @@
+named N=60 R->R == R: {'n': 21, 'ok': 0, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,0) Sub{1,2,3,4,6}', 'sfail': None, 'nfail': None}
+named N=60 R->R->R == R->R: {'n': 21, 'ok': 0, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,0) Sub{1,2,3,4,6}', 'sfail': None, 'nfail': None}
+named N=60 R->R->R == R: {'n': 21, 'ok': 21, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=60 loop even k == P(R) (k=2..8): {'n': 21, 'ok': 21, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=60 loop odd k == {G=1} (k=1..7): {'n': 21, 'ok': 21, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=60 R->R == R: {'n': 400, 'ok': 0, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,0) rSub{1,2,3,5}', 'sfail': None, 'nfail': None}
+random N=60 R->R->R == R->R: {'n': 400, 'ok': 0, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,0) rSub{1,2,3,5}', 'sfail': None, 'nfail': None}
+random N=60 R->R->R == R: {'n': 400, 'ok': 400, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=60 loop even k == P(R) (k=2..8): {'n': 400, 'ok': 400, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=60 loop odd k == {G=1} (k=1..7): {'n': 400, 'ok': 400, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=150 R->R == R: {'n': 21, 'ok': 0, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,0) Sub{1,2,3,4,6}', 'sfail': None, 'nfail': None}
+named N=150 R->R->R == R->R: {'n': 21, 'ok': 0, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,0) Sub{1,2,3,4,6}', 'sfail': None, 'nfail': None}
+named N=150 R->R->R == R: {'n': 21, 'ok': 21, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=150 loop even k == P(R) (k=2..8): {'n': 21, 'ok': 21, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=150 loop odd k == {G=1} (k=1..7): {'n': 21, 'ok': 21, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=150 R->R == R: {'n': 50, 'ok': 0, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,0) rSub{1,2,3,5}', 'sfail': None, 'nfail': None}
+random N=150 R->R->R == R->R: {'n': 50, 'ok': 0, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,0) rSub{1,2,3,5}', 'sfail': None, 'nfail': None}
+random N=150 R->R->R == R: {'n': 50, 'ok': 50, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=150 loop even k == P(R) (k=2..8): {'n': 50, 'ok': 50, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=150 loop odd k == {G=1} (k=1..7): {'n': 50, 'ok': 50, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}

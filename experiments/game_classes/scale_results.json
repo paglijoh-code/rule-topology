@@ -1,0 +1,550 @@
+[
+ {
+  "name": "nim",
+  "N": 200,
+  "cls": "lines",
+  "conf": 1.0,
+  "summary": "slopes 1.0",
+  "t_solve": 0.01,
+  "t_classify": 0.0,
+  "rss_mb": 30.0,
+  "density": 0.0055,
+  "scores": {
+   "lines": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "nim",
+  "N": 400,
+  "cls": "lines",
+  "conf": 1.0,
+  "summary": "slopes 1.0",
+  "t_solve": 0.03,
+  "t_classify": 0.0,
+  "rss_mb": 33.0,
+  "density": 0.0028,
+  "scores": {
+   "lines": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "nim",
+  "N": 800,
+  "cls": "lines",
+  "conf": 1.0,
+  "summary": "slopes 1.0",
+  "t_solve": 0.13,
+  "t_classify": 0.0,
+  "rss_mb": 47.0,
+  "density": 0.0014,
+  "scores": {
+   "lines": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "nim",
+  "N": 1000,
+  "cls": "lines",
+  "conf": 1.0,
+  "summary": "slopes 1.0",
+  "t_solve": 0.2,
+  "t_classify": 0.0,
+  "rss_mb": 55.0,
+  "density": 0.0011,
+  "scores": {
+   "lines": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "sub{1,2,5,6}",
+  "N": 200,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (7, 7)",
+  "t_solve": 0.04,
+  "t_classify": 0.0,
+  "rss_mb": 31.0,
+  "density": 0.2651,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "sub{1,2,5,6}",
+  "N": 400,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (7, 7)",
+  "t_solve": 0.15,
+  "t_classify": 0.0,
+  "rss_mb": 39.0,
+  "density": 0.265,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "sub{1,2,5,6}",
+  "N": 800,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (7, 7)",
+  "t_solve": 0.65,
+  "t_classify": 0.01,
+  "rss_mb": 75.0,
+  "density": 0.2653,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "sub{1,2,5,6}",
+  "N": 1000,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (7, 7)",
+  "t_solve": 1.01,
+  "t_classify": 0.02,
+  "rss_mb": 99.0,
+  "density": 0.2652,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "wsub{1,2,3}",
+  "N": 200,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (4, 4)",
+  "t_solve": 0.05,
+  "t_classify": 0.0,
+  "rss_mb": 31.0,
+  "density": 0.1882,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "wsub{1,2,3}",
+  "N": 400,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (4, 4)",
+  "t_solve": 0.19,
+  "t_classify": 0.0,
+  "rss_mb": 39.0,
+  "density": 0.1879,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "wsub{1,2,3}",
+  "N": 800,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (4, 4)",
+  "t_solve": 0.75,
+  "t_classify": 0.01,
+  "rss_mb": 74.0,
+  "density": 0.1877,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "wsub{1,2,3}",
+  "N": 1000,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (4, 4)",
+  "t_solve": 1.17,
+  "t_classify": 0.02,
+  "rss_mb": 97.0,
+  "density": 0.1876,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "euclid",
+  "N": 200,
+  "cls": "cone",
+  "conf": 0.875,
+  "summary": "slopes 0.6186,1.6167",
+  "t_solve": 0.03,
+  "t_classify": 0.0,
+  "rss_mb": 31.0,
+  "density": 0.456,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.875
+  },
+  "wall": null
+ },
+ {
+  "name": "euclid",
+  "N": 400,
+  "cls": "cone",
+  "conf": 0.875,
+  "summary": "slopes 0.6186,1.6166",
+  "t_solve": 0.14,
+  "t_classify": 0.0,
+  "rss_mb": 39.0,
+  "density": 0.46,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.875
+  },
+  "wall": null
+ },
+ {
+  "name": "euclid",
+  "N": 800,
+  "cls": "cone",
+  "conf": 0.875,
+  "summary": "slopes 0.6186,1.6166",
+  "t_solve": 0.61,
+  "t_classify": 0.01,
+  "rss_mb": 79.0,
+  "density": 0.4619,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.875
+  },
+  "wall": null
+ },
+ {
+  "name": "euclid",
+  "N": 1000,
+  "cls": "cone",
+  "conf": 0.875,
+  "summary": "slopes 0.6186,1.6166",
+  "t_solve": 0.97,
+  "t_classify": 0.02,
+  "rss_mb": 105.0,
+  "density": 0.4623,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.875
+  },
+  "wall": null
+ },
+ {
+  "name": "trunc_euclid3",
+  "N": 200,
+  "cls": "cone",
+  "conf": 0.068,
+  "summary": "slopes 0.6185,1.6167",
+  "t_solve": 0.03,
+  "t_classify": 0.0,
+  "rss_mb": 30.0,
+  "density": 0.4405,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.068
+  },
+  "wall": null
+ },
+ {
+  "name": "trunc_euclid3",
+  "N": 400,
+  "cls": "cone",
+  "conf": 0.154,
+  "summary": "slopes 0.1769,0.2181,0.6184,1.617,4.5845,5.6514",
+  "t_solve": 0.12,
+  "t_classify": 0.0,
+  "rss_mb": 39.0,
+  "density": 0.4431,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.154
+  },
+  "wall": null
+ },
+ {
+  "name": "trunc_euclid3",
+  "N": 800,
+  "cls": "cone",
+  "conf": 0.166,
+  "summary": "slopes 0.1769,0.2181,0.6182,1.6175,4.5854,5.6523",
+  "t_solve": 0.48,
+  "t_classify": 0.01,
+  "rss_mb": 79.0,
+  "density": 0.4444,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.166
+  },
+  "wall": null
+ },
+ {
+  "name": "trunc_euclid3",
+  "N": 1000,
+  "cls": "cone",
+  "conf": 0.166,
+  "summary": "slopes 0.177,0.2181,0.6182,1.6175,4.5854,5.6506",
+  "t_solve": 0.76,
+  "t_classify": 0.02,
+  "rss_mb": 105.0,
+  "density": 0.4447,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.166
+  },
+  "wall": null
+ },
+ {
+  "name": "misere sub{1..5}",
+  "N": 200,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (6, 6)",
+  "t_solve": 0.04,
+  "t_classify": 0.0,
+  "rss_mb": 30.0,
+  "density": 0.1667,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "misere sub{1..5}",
+  "N": 400,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (6, 6)",
+  "t_solve": 0.15,
+  "t_classify": 0.0,
+  "rss_mb": 35.0,
+  "density": 0.1667,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "misere sub{1..5}",
+  "N": 800,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (6, 6)",
+  "t_solve": 0.6,
+  "t_classify": 0.01,
+  "rss_mb": 57.0,
+  "density": 0.1667,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "misere sub{1..5}",
+  "N": 1000,
+  "cls": "stripes",
+  "conf": 1.0,
+  "summary": "period (6, 6)",
+  "t_solve": 0.97,
+  "t_classify": 0.02,
+  "rss_mb": 73.0,
+  "density": 0.1667,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "sub{1,2,5,6} (+) sub{1,2,3,4}",
+  "N": 200,
+  "cls": "chaos",
+  "conf": 0.315,
+  "summary": "",
+  "t_solve": 0.07,
+  "t_classify": 0.0,
+  "rss_mb": 31.0,
+  "density": 0.2134,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 0.0,
+   "fractal": 0.0
+  },
+  "wall": null
+ },
+ {
+  "name": "sub{1,2,5,6} (+) sub{1,2,3,4}",
+  "N": 400,
+  "cls": "chaos",
+  "conf": 0.304,
+  "summary": "",
+  "t_solve": 0.29,
+  "t_classify": 0.01,
+  "rss_mb": 40.0,
+  "density": 0.2091,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 0.0,
+   "fractal": 0.0
+  },
+  "wall": {
+   "verdict": "none",
+   "alpha": null,
+   "alpha_range": null,
+   "p": 10,
+   "risers": 3
+  }
+ },
+ {
+  "name": "sub{1,2,5,6} (+) sub{1,2,3,4}",
+  "N": 800,
+  "cls": "curved",
+  "conf": 0.603,
+  "summary": "alpha 0.47 [0.43,0.50]",
+  "t_solve": 1.18,
+  "t_classify": 0.04,
+  "rss_mb": 76.0,
+  "density": 0.2063,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 0.0,
+   "curved": 0.603
+  },
+  "wall": {
+   "verdict": "curved",
+   "alpha": 0.46511627906976744,
+   "alpha_range": [
+    0.425531914893617,
+    0.5
+   ],
+   "p": 10,
+   "risers": 5
+  }
+ },
+ {
+  "name": "sub{1,2,5,6} (+) sub{1,2,3,4}",
+  "N": 1000,
+  "cls": "curved",
+  "conf": 0.616,
+  "summary": "alpha 0.47 [0.44,0.49]",
+  "t_solve": 1.8,
+  "t_classify": 0.06,
+  "rss_mb": 98.0,
+  "density": 0.2056,
+  "scores": {
+   "lines": 0.0,
+   "cone": 0.0,
+   "stripes": 0.0,
+   "curved": 0.616
+  },
+  "wall": {
+   "verdict": "curved",
+   "alpha": 0.46511627906976744,
+   "alpha_range": [
+    0.4444444444444444,
+    0.48780487804878053
+   ],
+   "p": 10,
+   "risers": 6
+  }
+ },
+ {
+  "name": "nim (+) euclid",
+  "N": 200,
+  "cls": "lines",
+  "conf": 1.0,
+  "summary": "slopes 1.0",
+  "t_solve": 0.04,
+  "t_classify": 0.0,
+  "rss_mb": 30.0,
+  "density": 0.0055,
+  "scores": {
+   "lines": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "nim (+) euclid",
+  "N": 400,
+  "cls": "lines",
+  "conf": 1.0,
+  "summary": "slopes 1.0",
+  "t_solve": 0.17,
+  "t_classify": 0.0,
+  "rss_mb": 33.0,
+  "density": 0.0028,
+  "scores": {
+   "lines": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "nim (+) euclid",
+  "N": 800,
+  "cls": "lines",
+  "conf": 1.0,
+  "summary": "slopes 1.0",
+  "t_solve": 0.73,
+  "t_classify": 0.0,
+  "rss_mb": 48.0,
+  "density": 0.0014,
+  "scores": {
+   "lines": 1.0
+  },
+  "wall": null
+ },
+ {
+  "name": "nim (+) euclid",
+  "N": 1000,
+  "cls": "lines",
+  "conf": 1.0,
+  "summary": "slopes 1.0",
+  "t_solve": 1.15,
+  "t_classify": 0.0,
+  "rss_mb": 57.0,
+  "density": 0.0011,
+  "scores": {
+   "lines": 1.0
+  },
+  "wall": null
+ }
+]

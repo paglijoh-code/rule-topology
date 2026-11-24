@@ -1,0 +1,32 @@
+{"id": "A", "status": "ok", "T_R": 10, "P_R": 7, "Delta_pred": 10, "s_pred": "14", "lam_pred": "7/5"}
+{"id": "B", "status": "ok", "T_R": 6, "P_R": 6, "Delta_pred": 6, "s_pred": "6", "lam_pred": "1"}
+{"id": "r10:s1-2-4-7-9-10_g0123456_p0", "status": "ok", "T_R": 14, "P_R": 11, "Delta_pred": 14, "s_pred": "22", "lam_pred": "11/7"}
+{"id": "r10:s1-2-4-9-10_g0123456_p0", "status": "ok", "T_R": 14, "P_R": 11, "Delta_pred": 14, "s_pred": "22", "lam_pred": "11/7"}
+{"id": "r10:s1-2-5-6-9-10_g012345678_p0", "status": "ok", "T_R": 18, "P_R": 11, "Delta_pred": 18, "s_pred": "22", "lam_pred": "11/9"}
+{"id": "r10:s1-2-5-6-9_g00112233041520314_p12", "status": "ok", "T_R": 10, "P_R": 7, "Delta_pred": 10, "s_pred": "14", "lam_pred": "7/5"}
+{"id": "r10:s1-2-5-6-9_g01234_p0", "status": "ok", "T_R": 10, "P_R": 7, "Delta_pred": 10, "s_pred": "14", "lam_pred": "7/5"}
+{"id": "r10:s1-2-5-9_g012345678_p0", "status": "ok", "T_R": 27, "P_R": 10, "Delta_pred": 27, "s_pred": "30", "lam_pred": "10/9"}
+{"id": "r10:s1-2-7-9-10_g0123456_p0", "status": "ok", "T_R": 14, "P_R": 11, "Delta_pred": 14, "s_pred": "22", "lam_pred": "11/7"}
+{"id": "r10:s1-3-4-10_g00112230413041522001132403140213320011322_p24", "status": "ok", "T_R": 34, "P_R": 10, "Delta_pred": 34, "s_pred": "20", "lam_pred": "10/17"}
+{"id": "r10:s1-3-4-6-8-10_g0001112023134002113_p13", "status": "ok", "T_R": 12, "P_R": 21, "Delta_pred": 12, "s_pred": "42", "lam_pred": "7/2"}
+{"id": "r10:s1-3-4-6-8-10_g0001112023134005114002113_p19", "status": "ok", "T_R": 12, "P_R": 21, "Delta_pred": 12, "s_pred": "42", "lam_pred": "7/2"}
+{"id": "r10:s1-3-5-8_g001122330410213203_p10", "status": "ok", "T_R": 24, "P_R": 26, "Delta_pred": 24, "s_pred": "78", "lam_pred": "13/4"}
+{"id": "r10:s1-4-6-8_g0011223340516203142536_p0", "status": "ok", "T_R": 88, "P_R": 110, "Delta_pred": 88, "s_pred": "440", "lam_pred": "5"}
+{"id": "r10:s1-4-7-8-9-10_g00112233041520310213_p12", "status": "ok", "T_R": 16, "P_R": 16, "Delta_pred": 16, "s_pred": "32", "lam_pred": "2"}
+{"id": "r10:s1-6-8-9-10_g0001112220331442_p0", "status": "ok", "T_R": 16, "P_R": 16, "Delta_pred": 16, "s_pred": "16", "lam_pred": "1"}
+{"id": "r10:s2-3-6-7-10_g0123456_p0", "status": "ok", "T_R": 35, "P_R": 13, "Delta_pred": 35, "s_pred": "65", "lam_pred": "13/7"}
+{"id": "r10:s3-4-9-10_g00112233041520314_p12", "status": "ok", "T_R": 20, "P_R": 13, "Delta_pred": 20, "s_pred": "52", "lam_pred": "13/5"}
+{"id": "r10:s3-4-9-10_g01234_p0", "status": "ok", "T_R": 20, "P_R": 13, "Delta_pred": 20, "s_pred": "52", "lam_pred": "13/5"}
+{"id": "r10:s3-5-6-7-8_g00112233041520314_p12", "status": "ok", "T_R": 10, "P_R": 11, "Delta_pred": 10, "s_pred": "22", "lam_pred": "11/5"}
+{"id": "r10:s4-5-6-7-8-9_g00112233041520314_p12", "status": "ok", "T_R": 25, "P_R": 13, "Delta_pred": 25, "s_pred": "65", "lam_pred": "13/5"}
+{"id": "r10:s4-5-6-7-8-9_g01234_p0", "status": "ok", "T_R": 25, "P_R": 13, "Delta_pred": 25, "s_pred": "65", "lam_pred": "13/5"}
+{"id": "r10:s4-5-6-8-9_g00112233041520314_p12", "status": "ok", "T_R": 25, "P_R": 13, "Delta_pred": 25, "s_pred": "65", "lam_pred": "13/5"}
+{"id": "r10:s4-5-6-8-9_g01234_p0", "status": "ok", "T_R": 25, "P_R": 13, "Delta_pred": 25, "s_pred": "65", "lam_pred": "13/5"}
+{"id": "r10:s4-5-7-8-9_g00112233041520314_p12", "status": "ok", "T_R": 25, "P_R": 13, "Delta_pred": 25, "s_pred": "65", "lam_pred": "13/5"}
+{"id": "r10:s5-6-7-9_g001122330410213203_p10", "status": "ok", "T_R": 40, "P_R": 14, "Delta_pred": 40, "s_pred": "70", "lam_pred": "7/4"}
+{"id": "r10:s5-6-7-9_g00112233041520310213_p12", "status": "ok", "T_R": 40, "P_R": 14, "Delta_pred": 40, "s_pred": "70", "lam_pred": "7/4"}
+{"id": "r10:s5-6-7-9_g0011223340510213203_p11", "status": "ok", "T_R": 40, "P_R": 14, "Delta_pred": 40, "s_pred": "70", "lam_pred": "7/4"}
+{"id": "r10:s6-7-8_g0120120123_p0", "status": "ok", "T_R": 40, "P_R": 90, "Delta_pred": 40, "s_pred": "360", "lam_pred": "9"}
+{"id": "p7_12:s1-2-3-6-8_g0102211_p0", "status": "ok", "T_R": 14, "P_R": 14, "Delta_pred": 14, "s_pred": "28", "lam_pred": "2"}
+{"id": "p7_12:s1-2-3-6-8_g0122300_p0", "status": "ok", "T_R": 84, "P_R": null}
+{"id": "p78_rand:s4-5-6-7-8-10_g01000022_p0", "status": "ok", "T_R": 112, "P_R": null}

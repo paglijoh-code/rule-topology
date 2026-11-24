@@ -1,0 +1,63 @@
+id,source,S1,status,note,lean_theorem,pi,w0,delta,alpha,beta,c,k0,T0,R,steady_shapes,build_time
+B,census_10,1-2-3-4-7-8,LEAN,built with the main library,Family.Cert.WB.wall,6,174,36,36,276,34,3,1795,1,325,"136.3 s (estimate)"
+A,census_10,1-2-5-6,LEAN,built with the main library,Family.Cert.WA.wall,10,35,10,14,42,20,33,8791,7,2653,"798.0 s (estimate)"
+r10:s1-2-5-6-9_g01234_p0,census_10,1-2-5-6-9,LEAN,built once on a laptop,Family.Cert.Wr10_s1_2_5_6_9_g01234_p0.wall,10,40,10,14,56,15,33,9292,7,2744,2219 s
+r10:s1-4-7-8-9-10_g00112233041520310213_p12,census_10,1-4-7-8-9-10,LEAN,built once on a laptop,Family.Cert.Wr10_s1_4_7_8_9_10_g00112233041520310213_p12.wall,16,53,16,16,80,290,10,1700,1,186,261 s
+r10:s1-6-8-9-10_g0001112220331442_p0,census_10,1-6-8-9-10,LEAN,built once on a rented machine,Family.Cert.Wr10_s1_6_8_9_10_g0001112220331442_p0.wall,16,3431,48,48,3344,41,2,31088,1,605,1233 s wall clock, 32 vCPU
+r10:s1-2-4-7-9-10_g0123456_p0,census_10,1-2-4-7-9-10,LEAN,built once on a rented machine,Family.Cert.Wr10_s1_2_4_7_9_10_g0123456_p0.wall,14,111,14,22,165,29,45,29422,11,9581,306 s wall clock, 32 vCPU
+r10:s1-2-7-9-10_g0123456_p0,census_10,1-2-7-9-10,LEAN,built once on a rented machine,Family.Cert.Wr10_s1_2_7_9_10_g0123456_p0.wall,14,125,14,22,187,29,44,29367,11,9581,980 s wall clock, 32 vCPU
+r10:s1-2-4-9-10_g0123456_p0,census_10,1-2-4-9-10,LEAN,built once on a rented machine,Family.Cert.Wr10_s1_2_4_9_10_g0123456_p0.wall,14,139,14,22,209,29,43,29217,11,9559,1694 s wall clock, 32 vCPU
+r10:s1-2-5-6-9-10_g012345678_p0,census_10,1-2-5-6-9-10,LEAN,built once on a rented machine,Family.Cert.Wr10_s1_2_5_6_9_10_g012345678_p0.wall,18,153,18,22,154,54,58,45473,11,9614,2292 s wall clock, 32 vCPU
+r10:s3-4-9-10_g01234_p0,census_10,3-4-9-10,LEAN,built once on a rented machine,Family.Cert.Wr10_s3_4_9_10_g01234_p0.wall,20,57,20,52,169,30,28,24531,13,16224,1554 s wall clock, 32 vCPU
+r10:s3-4-9-10_g00112233041520314_p12,census_10,3-4-9-10,LEAN,built once on a rented machine,Family.Cert.Wr10_s3_4_9_10_g00112233041520314_p12.wall,20,62,20,52,182,30,28,24942,13,16627,1630 s wall clock, 32 vCPU
+r10:s2-3-6-7-10_g0123456_p0,census_10,2-3-6-7-10,LEAN,built once on a rented machine,Family.Cert.Wr10_s2_3_6_7_10_g0123456_p0.wall,35,103,35,65,234,42,22,20471,13,15795,1698 s wall clock, 32 vCPU
+r10:s1-2-5-6-9_g00112233041520314_p12,census_10,1-2-5-6-9,LEAN,built once on a rented machine,Family.Cert.Wr10_s1_2_5_6_9_g00112233041520314_p12.wall,10,110,10,7,49,15,174,114066,42,17409,4796 s wall clock, 32 vCPU
+r10:s4-5-6-7-8-9_g00112233041520314_p12,census_10,4-5-6-7-8-9,LEAN,built once on a rented machine,Family.Cert.Wr10_s4_5_6_7_8_9_g00112233041520314_p12.wall,25,62,25,65,208,30,22,19794,13,16627,172 s wall clock, 32 vCPU
+r10:s1-3-4-6-8-10_g0001112023134002113_p13,census_10,1-3-4-6-8-10,LEAN,built once on a rented machine,Family.Cert.Wr10_s1_3_4_6_8_10_g0001112023134002113_p13.wall,12,39,36,252,378,33,19,50398,7,13790,145 s wall clock, 32 vCPU
+r10:s1-3-4-6-8-10_g0001112023134005114002113_p19,census_10,1-3-4-6-8-10,PENDING,build failed,,12,39,36,252,378,33,20,55564,7,14770,
+r10:s4-5-6-7-8-9_g01234_p0,census_10,4-5-6-7-8-9,LEAN,built once on a rented machine,Family.Cert.Wr10_s4_5_6_7_8_9_g01234_p0.wall,25,57,25,65,195,30,22,19523,13,16185,137 s wall clock, 32 vCPU
+r10:s4-5-6-8-9_g00112233041520314_p12,census_10,4-5-6-8-9,LEAN,built once on a rented machine,Family.Cert.Wr10_s4_5_6_8_9_g00112233041520314_p12.wall,25,62,25,65,208,30,22,19794,13,16627,95 s wall clock, 32 vCPU
+p7_12:s1-2-3-6-8_g0102211_p0,census_10,1-2-3-6-8,LEAN,built once on a laptop,Family.Cert.Wp7_12_s1_2_3_6_8_g0102211_p0.wall,14,54,14,14,70,260,8,1094,1,141,170 s
+p7_12:s1-2-3-6-8_g0122300_p0,census_10,1-2-3-6-8,COMP,generator closed but the law is incomplete; no round certificate,,7,,,84,287,,0,414,1,204,
+r10:s4-5-6-8-9_g01234_p0,census_10,4-5-6-8-9,LEAN,built once on a rented machine,Family.Cert.Wr10_s4_5_6_8_9_g01234_p0.wall,25,22,25,65,104,30,24,20490,13,16185,198 s wall clock, 32 vCPU
+p78_rand:s4-5-6-7-8-10_g01000022_p0,census_10,4-5-6-7-8-10,LEAN,built once on a laptop,Family.Cert.Wp78_rand_s4_5_6_7_8_10_g01000022_p0.wall,112,93,48,96,400,810,3,1761,1,570,846 s
+s1-2-5-6-12_g01234_p0,prediction,1-2-5-6-12,LEAN,built once on a laptop,Family.Cert.Ws1_2_5_6_12_g01234_p0.wall,10,40,10,14,56,15,38,12022,7,2961,2691 s
+r10:s4-5-7-8-9_g00112233041520314_p12,census_10,4-5-7-8-9,LEAN,built once on a rented machine,Family.Cert.Wr10_s4_5_7_8_9_g00112233041520314_p12.wall,25,62,25,65,208,30,22,19794,13,16627,28 s wall clock, 32 vCPU
+s1-2-5-6-9-12_g01234_p0,prediction,1-2-5-6-9-12,LEAN,built once on a laptop,Family.Cert.Ws1_2_5_6_9_12_g01234_p0.wall,10,40,10,14,56,15,38,12022,7,2961,3114 s
+r10:s1-4-6-8_g0011223340516203142536_p0,census_10,1-4-6-8,PENDING,build failed,,88,107,88,440,660,86,11,31943,5,20080,
+s1-2-3-5-6-8-9-10-12_g01234_p0,prediction,1-2-3-5-6-8-9-10-12,LEAN,built once on a rented machine,Family.Cert.Ws1_2_3_5_6_8_9_10_12_g01234_p0.wall,15,158,15,33,352,25,26,20522,11,10197,860 s wall clock, 32 vCPU
+r10:s5-6-7-9_g001122330410213203_p10,census_10,5-6-7-9,LEAN,built once on a rented machine,Family.Cert.Wr10_s5_6_7_9_g001122330410213203_p10.wall,40,43,80,420,532,77,8,16102,7,8701,1831 s wall clock, 32 vCPU
+s2-4-10-12_g01234_p0,prediction,2-4-10-12,PENDING,build failed,,20,79,20,28,112,30,65,65624,7,9933,
+r10:s5-6-7-9_g00112233041520310213_p12,census_10,5-6-7-9,LEAN,built once on a rented machine,Family.Cert.Wr10_s5_6_7_9_g00112233041520310213_p12.wall,40,75,80,420,700,77,8,17687,7,8680,2094 s wall clock, 32 vCPU
+r10:s5-6-7-9_g0011223340510213203_p11,census_10,5-6-7-9,LEAN,built once on a rented machine,Family.Cert.Wr10_s5_6_7_9_g0011223340510213203_p11.wall,40,107,80,420,826,69,8,18861,7,8673,868 s wall clock, 32 vCPU
+s1-2-9-11_g0123456_p0,prediction,1-2-9-11,LEAN,built once on a rented machine,Family.Cert.Ws1_2_9_11_g0123456_p0.wall,35,297,35,55,462,42,12,10327,11,9592,544 s wall clock, 32 vCPU
+s1-2-4-9-10-12_g0123456_p0,prediction,1-2-4-9-10-12,LEAN,built once on a rented machine,Family.Cert.Ws1_2_4_9_10_12_g0123456_p0.wall,14,139,14,22,209,29,47,34035,11,9900,1689 s wall clock, 32 vCPU
+s1-4-5-7-9-10-12_g0123456_p0,prediction,1-4-5-7-9-10-12,PENDING,certificate regenerated 2026-11-24 with row period 28 (was wrongly 14); Lean not run,,28,156,280,560,700,4351,1,1059,1,818,
+s1-2-7-9-10-12_g0123456_p0,prediction,1-2-7-9-10-12,LEAN,built once on a rented machine,Family.Cert.Ws1_2_7_9_10_12_g0123456_p0.wall,14,125,14,22,187,29,48,34130,11,9922,1431 s wall clock, 32 vCPU
+s1-2-4-7-9-10-12_g0123456_p0,prediction,1-2-4-7-9-10-12,LEAN,built once on a rented machine,Family.Cert.Ws1_2_4_7_9_10_12_g0123456_p0.wall,14,111,14,22,165,29,49,34196,11,9922,1430 s wall clock, 32 vCPU
+r10:s1-2-5-9_g012345678_p0,census_10,1-2-5-9,PENDING,not built (run stopped),,27,52,27,30,80,43,59,56135,20,28500,
+s2-3-6-7-10-11_g0123456_p0,prediction,2-3-6-7-10-11,LEAN,built once on a rented machine,Family.Cert.Ws2_3_6_7_10_11_g0123456_p0.wall,35,103,35,65,234,42,22,20471,13,15860,1705 s wall clock, 32 vCPU
+r10:s1-3-4-10_g00112230413041522001132403140213320011322_p24,census_10,1-3-4-10,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+r10:s1-3-5-8_g001122330410213203_p10,census_10,1-3-5-8,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+s2-4-10-12_g0123456789_p0,prediction,2-4-10-12,COMP,generator refused: L=70 M=14: sstep failed at row 0: tail does not settle; L=70 M=20: sst,,,,,,,,,,,,
+r10:s3-5-6-7-8_g00112233041520314_p12,census_10,3-5-6-7-8,COMP,"generator timeout: internal deadline in offset sweep (L=55, M=20)",,,,,,,,,,,,
+s2-3-4-10-12_g0123456789_p0,prediction,2-3-4-10-12,LEAN,built once on a rented machine,Family.Cert.Ws2_3_4_10_12_g0123456789_p0.wall,20,156,20,28,168,52,47,38417,7,5992,1900 s wall clock, 32 vCPU
+s2-3-4-9-11_g012345678_p0,prediction,2-3-4-9-11,PENDING,build failed,,45,188,45,65,312,54,21,20644,13,15782,
+s2-4-9-10-11_g012345678_p0,prediction,2-4-9-10-11,PENDING,build failed,,45,233,45,65,377,54,20,20420,13,15782,
+s2-3-4-9-10-11_g012345678_p0,prediction,2-3-4-9-10-11,PENDING,build failed,,45,143,45,65,247,54,22,20644,13,15782,
+s2-5-8-11_g012345678_p0,prediction,2-5-8-11,LEAN,built once on a rented machine,Family.Cert.Ws2_5_8_11_g012345678_p0.wall,36,98,36,52,156,54,29,25849,13,15795,2439 s wall clock, 32 vCPU
+r10:s6-7-8_g0120120123_p0,census_10,6-7-8,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+s4-5-6-11-12_g01234_p0,prediction,4-5-6-11-12,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+s1-4-6-7-11-12_g0123456_p0,prediction,1-4-6-7-11-12,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+s1-4-9-12_g012345678910_p0,prediction,1-4-9-12,PENDING,build failed,,44,143,44,52,182,66,36,39528,13,15951,
+s4-6-7-9-10-11_g0123456_p0,prediction,4-6-7-9-10-11,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+s4-6-7-8-9-10-11_g0123456_p0,prediction,4-6-7-8-9-10-11,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+s2-3-4-7-8-9-10-11-12_g0123456_p0,prediction,2-3-4-7-8-9-10-11-12,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+s1-2-11-12_g012345678910_p0,prediction,1-2-11-12,PENDING,not built (run stopped),,55,242,55,65,325,66,30,38486,13,16198,
+s1-2-5-11-12_g012345678910_p0,prediction,1-2-5-11-12,PENDING,not built (run stopped),,55,242,55,65,325,66,30,38499,13,16198,
+s1-2-8-11-12_g012345678910_p0,prediction,1-2-8-11-12,PENDING,not built (run stopped),,55,242,55,65,325,66,30,38486,13,16198,
+s1-2-5-8-11-12_g012345678910_p0,prediction,1-2-5-8-11-12,PENDING,not built (run stopped),,55,242,55,65,325,66,30,38499,13,16198,
+s1-2-5-6-11-12_g012345678910_p0,prediction,1-2-5-6-11-12,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+s1-2-4-7-12_g01234567891011_p0,prediction,1-2-4-7-12,COMP,"generator timeout: internal deadline in offset sweep (L=168, M=14)",,,,,,,,,,,,
+s1-2-8-12_g01234567891011_p0,prediction,1-2-8-12,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,
+s1-2-5-8-12_g01234567891011_p0,prediction,1-2-5-8-12,COMP,generator timeout: killed after 1800 s,,,,,,,,,,,,

@@ -1,0 +1,1 @@
+out/s1.jsonl {'bounded': 24671, 'overflow': 3786, 'growing:sqrt-like': 58, 'noperiod': 1147, 'growing:linear': 11, 'growing:slow': 15, 'growing:mid': 6} -> stage 2: 1547 Counter({'noperiod': 1147, 'late-overflow': 310, 'growing': 90})

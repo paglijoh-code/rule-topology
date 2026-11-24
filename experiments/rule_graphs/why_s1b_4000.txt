@@ -1,0 +1,22 @@
+shift 0: growing a=0.50 rounds=19 bfit=0.5
+shift 1: growing a=0.50 rounds=19 bfit=0.5
+shift 2: growing a=0.50 rounds=19 bfit=0.5
+shift 7: bounded a=0.00 rounds=None bfit=None
+offset 0 mod 5: growing a=0.52 rounds=15 bfit=0.5
+offset 1 mod 5: bounded a=0.00 rounds=None bfit=None
+offset 2 mod 5: bounded a=0.00 rounds=None bfit=None
+offset 3 mod 5: bounded a=0.00 rounds=None bfit=None
+offset 4 mod 5: bounded a=0.00 rounds=None bfit=None
+offset 1, strip |b-a|<0 from shift 1: bounded a=0.00 rounds=None bfit=None
+offset 1, strip |b-a|<3 from shift 1: bounded a=0.00 rounds=None bfit=None
+offset 1, strip |b-a|<6 from shift 1: bounded a=0.00 rounds=None bfit=None
+offset 1, strip |b-a|<11 from shift 1: bounded a=0.00 rounds=None bfit=None
+offset 1, strip |b-a|<21 from shift 1: bounded a=0.00 rounds=None bfit=None
+offset 2, strip |b-a|<0 from shift 2: bounded a=0.00 rounds=None bfit=None
+offset 2, strip |b-a|<3 from shift 2: bounded a=0.00 rounds=None bfit=None
+offset 2, strip |b-a|<6 from shift 2: bounded a=0.00 rounds=None bfit=None
+offset 2, strip |b-a|<11 from shift 2: bounded a=0.00 rounds=None bfit=None
+offset 2, strip |b-a|<21 from shift 2: bounded a=0.00 rounds=None bfit=None
+offset 2, min(a,b)<12 from shift 2: growing a=0.50 rounds=19 bfit=0.5
+offset 2, min(a,b)<30 from shift 2: growing a=0.50 rounds=19 bfit=0.5
+shift 2 vs 7 target cells differing: 8052 max offset |b-a|: 10

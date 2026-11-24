@@ -1,0 +1,16 @@
+S1 (1, 2, 5, 6, 9) B [2, 3, 4, 6, 9]
+g[:40] 0011223304152031420314203142031420314203
+delta 0: growing a=0.43 rounds=12  cells != delta0: 0  != no-push: 1462837  push used (P-target cells A lands on as P): -
+delta 1: growing a=0.43 rounds=12  cells != delta0: 1636609  != no-push: 1425852  push used (P-target cells A lands on as P): -
+delta 2: growing a=0.43 rounds=12  cells != delta0: 1637687  != no-push: 1439898  push used (P-target cells A lands on as P): -
+delta 3: growing a=0.43 rounds=12  cells != delta0: 1636929  != no-push: 1419828  push used (P-target cells A lands on as P): -
+delta 4: growing a=0.43 rounds=12  cells != delta0: 1634041  != no-push: 1429616  push used (P-target cells A lands on as P): -
+delta 5: growing a=0.43 rounds=12  cells != delta0: 1639237  != no-push: 1413972  push used (P-target cells A lands on as P): -
+delta 6: growing a=0.43 rounds=12  cells != delta0: 1636603  != no-push: 1425866  push used (P-target cells A lands on as P): -
+delta 7: bounded a=0.00 rounds=None  cells != delta0: 1260381  != no-push: 1415016  push used (P-target cells A lands on as P): -
+delta 8: growing a=0.43 rounds=12  cells != delta0: 1638907  != no-push: 1419978  push used (P-target cells A lands on as P): -
+delta 9: growing a=0.43 rounds=12  cells != delta0: 1639987  != no-push: 1433866  push used (P-target cells A lands on as P): -
+no-push-wins (target all N): none 0.0 None
+delta 1 vs 0: 1636609 diff cells, offset range -2000..2000, first [[0, 0], [0, 2], [0, 3], [0, 5], [0, 7]]
+delta 3 vs 0: 1636929 diff cells, offset range -1999..1999, first [[0, 0], [0, 2], [0, 5], [0, 7], [0, 9]]
+delta 7 vs 0: 1260381 diff cells, offset range -1999..1999, first [[0, 0], [0, 2], [0, 3], [0, 5], [0, 9]]

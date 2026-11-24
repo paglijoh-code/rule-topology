@@ -1,0 +1,19 @@
+N 4000 chains 3556
+wall survives=False  B table unchanged=False: 3469
+wall survives=True  B table unchanged=False: 87
+survivors where B changed (id, kind, alpha, first changed row of B, cells changed):
+  ('chain|A|37', 'linear', 1.0, 0, 6082401)
+  ('chain|A|347', 'linear', 1.0, 0, 5922801)
+  ('chain|A|357', 'linear', 1.0, 0, 5922801)
+  ('chain|A|367', 'linear', 1.0, 0, 5922801)
+  ('chain|A|3457', 'linear', 1.0, 0, 5922801)
+  ('chain|A|3467', 'linear', 1.0, 0, 5922801)
+  ('chain|A|3567', 'linear', 1.0, 0, 5922801)
+  ('chain|A|34567', 'linear', 1.0, 0, 5922801)
+  ('chain|r10:s1-2-4-9-10_g0123456_p0|23', 'growing', 1.07, 0, 3440113)
+  ('chain|r10:s1-2-4-9-10_g0123456_p0|237', 'growing', 1.07, 0, 3440113)
+  ('chain|r10:s1-2-5-6-9-10_g012345678_p0|2', 'growing', 0.05, 0, 3023685)
+  ('chain|r10:s1-2-5-6-9-10_g012345678_p0|26', 'growing', 0.05, 0, 3023685)
+  ('chain|r10:s1-2-5-6-9-10_g012345678_p0|27', 'growing', 1.382, 0, 3360201)
+  ('chain|r10:s1-2-5-6-9-10_g012345678_p0|267', 'linear', 1.0, 0, 3101567)
+  ('chain|r10:s1-2-5-6-9-10_g012345678_p0|2357', 'growing', 1.382, 0, 3360201)

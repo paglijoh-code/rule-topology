@@ -1,0 +1,16 @@
+Family.Cert.Wp78_rand_s4_5_6_7_8_10_g01000022_p0.wall : Family.WallLaw
+  Family.Cert.Wp78_rand_s4_5_6_7_8_10_g01000022_p0.cert
+'Family.Cert.Wp78_rand_s4_5_6_7_8_10_g01000022_p0.wall' depends on axioms: [propext, Classical.choice, Quot.sound]
+Family.Cert.Wp7_12_s1_2_3_6_8_g0102211_p0.wall : Family.WallLaw Family.Cert.Wp7_12_s1_2_3_6_8_g0102211_p0.cert
+'Family.Cert.Wp7_12_s1_2_3_6_8_g0102211_p0.wall' depends on axioms: [propext, Classical.choice, Quot.sound]
+Family.Cert.Wr10_s1_2_5_6_9_g01234_p0.wall : Family.WallLaw Family.Cert.Wr10_s1_2_5_6_9_g01234_p0.cert
+'Family.Cert.Wr10_s1_2_5_6_9_g01234_p0.wall' depends on axioms: [propext, Classical.choice, Quot.sound]
+Family.Cert.Wr10_s1_4_7_8_9_10_g00112233041520310213_p12.wall : Family.WallLaw
+  Family.Cert.Wr10_s1_4_7_8_9_10_g00112233041520310213_p12.cert
+'Family.Cert.Wr10_s1_4_7_8_9_10_g00112233041520310213_p12.wall' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Family.Cert.Ws1_2_5_6_12_g01234_p0.wall : Family.WallLaw Family.Cert.Ws1_2_5_6_12_g01234_p0.cert
+'Family.Cert.Ws1_2_5_6_12_g01234_p0.wall' depends on axioms: [propext, Classical.choice, Quot.sound]
+Family.Cert.Ws1_2_5_6_9_12_g01234_p0.wall : Family.WallLaw Family.Cert.Ws1_2_5_6_9_12_g01234_p0.cert
+'Family.Cert.Ws1_2_5_6_9_12_g01234_p0.wall' depends on axioms: [propext, Classical.choice, Quot.sound]

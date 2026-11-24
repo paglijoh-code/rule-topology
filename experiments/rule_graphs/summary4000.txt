@@ -1,0 +1,36 @@
+N = 4000  total 8024
+
+kind by type (survival = kind growing or linear; sqrt-like = growing with alpha in [0.4,0.6])
+type    n  none bounded slow noperiod linear growing  sqrt-like  growing%
+edge      28     0       0     0        0      0      28         21    100.0
+chain   3556   115    3074     0      280     23      64          8      2.4
+pre     3556    24     664     1      123    107    2637       1472     77.2
+cycle     84    56       0     0        0      0      28         21     33.3
+branch   300    16     258     0        5      0      21         14      7.0
+rand     500   107     366     0       22      3       2          0      1.0
+
+exponent histogram (growing only; headline alpha)
+bin           edge   chain     pre   cycle  branch    rand
+[0.00,0.10)       2      21     182       2       0       1
+[0.10,0.20)       0       0      37       0       0       0
+[0.20,0.30)       0       0      21       0       0       0
+[0.30,0.40)       1       1      69       1       0       0
+[0.40,0.45)       1       0     121       1       0       0
+[0.45,0.55)      18       8    1163      18      12       0
+[0.55,0.60)       2       0     185       2       2       0
+[0.60,0.70)       4       0     289       4       2       0
+[0.70,0.90)       0       6     169       0       0       0
+[0.90,1.10)       0      12      76       0       3       1
+[1.10,9.00)       0      16     325       0       2       0
+
+bfit (alpha_bfit, growing, >=8 rounds) histogram
+[0.00,0.30)       0      15      84       0       0       1
+[0.30,0.40)       0       0      44       0       2       0
+[0.40,0.45)       0       0      55       0       0       0
+[0.45,0.55)      18       0    1016      18       7       0
+[0.55,0.65)       1       7      62       1       3       0
+[0.65,1.10)       2      12     199       2       1       0
+[1.10,9.00)       0       0       0       0       0       0
+growing with <8 rounds (no bfit): edge:7 chain:30 pre:1177 cycle:7 branch:8 rand:1
+
+candidates: 2190  by type: {'chain': 327, 'pre': 1809, 'cycle': 12, 'branch': 18, 'rand': 24}  by kind: {'noperiod': 430, 'growing': 1759, 'slow': 1}

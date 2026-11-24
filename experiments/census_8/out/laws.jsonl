@@ -1,0 +1,2 @@
+{"rounds": 118, "j0": 3, "k_checked": 115, "t0": 178, "gap0": 84, "s": 14, "Delta": 10, "w0": 65, "t_k": "7k^2 + 77k + 178", "w_k": "65 + 10k", "exact": true, "c": 3.7796, "gap_vs_w": "gap_k = 1.4*w_k + -7", "last_T": 99928}
+{"rounds": 72, "j0": 4, "k_checked": 68, "t0": 859, "gap0": 276, "s": 36, "Delta": 36, "w0": 208, "t_k": "18k^2 + 258k + 859", "w_k": "208 + 36k", "exact": true, "c": 8.4853, "gap_vs_w": "gap_k = 1*w_k + 68", "last_T": 98947}

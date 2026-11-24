@@ -1,0 +1,28 @@
+named N=60 F1 fork==phi(R1,P2|P3): {'n': 9261, 'ok': 9261, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=60 F2 fork<=P(ch12)&P(ch13): {'n': 9261, 'ok': 2159, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,2) Sub{1,2,3,4,6}>{Sub{1,2,3,4,6},Sub{2,3,4}}', 'sfail': None, 'nfail': None}
+named N=60 F3 fork==a chain: {'n': 9261, 'ok': 2907, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,1) Sub{1,2,3,4,6}>{Sub{1,2,3,4,6},Sub{2,3,4}}', 'sfail': None, 'nfail': None}
+named N=60 F2b fork<=P(ch12)|P(ch13): {'n': 9261, 'ok': 4455, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,3) Sub{1,2,3,4,6}>{Sub{1,3,4},Sub{2,3,4}}', 'sfail': None, 'nfail': None}
+named N=60 F2c fork>=P(ch12)&P(ch13): {'n': 9261, 'ok': 5865, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,5) Sub{1,2,5,6}>{Sub{1,3},Sub{2,3,4}}', 'sfail': None, 'nfail': None}
+named N=60 J1 join start1==chain(1,3): {'n': 9261, 'ok': 9261, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=60 J2 join start2==chain(2,3): {'n': 9261, 'ok': 9261, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=60 F1 fork==phi(R1,P2|P3): {'n': 3000, 'ok': 3000, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=60 F2 fork<=P(ch12)&P(ch13): {'n': 3000, 'ok': 96, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,2) rSub{1,4,7,8}>{rSub{1,2},rVec(0,2)(1,1)(1,2)(3,1)}', 'sfail': None, 'nfail': None}
+random N=60 F3 fork==a chain: {'n': 3000, 'ok': 90, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,1) rSub{1,2,3,5}>{rSub{1,7},rSub{2,4,6}}', 'sfail': None, 'nfail': None}
+random N=60 F2b fork<=P(ch12)|P(ch13): {'n': 3000, 'ok': 799, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,3) rSub{1,2,3,5}>{rSub{1,7},rSub{2,4,6}}', 'sfail': None, 'nfail': None}
+random N=60 F2c fork>=P(ch12)&P(ch13): {'n': 3000, 'ok': 1065, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,5) rSub{1,2,6,8}>{rSub{2,4,5,6},rSub{1,5,7}}', 'sfail': None, 'nfail': None}
+random N=60 J1 join start1==chain(1,3): {'n': 3000, 'ok': 3000, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=60 J2 join start2==chain(2,3): {'n': 3000, 'ok': 3000, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=150 F1 fork==phi(R1,P2|P3): {'n': 500, 'ok': 500, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=150 F2 fork<=P(ch12)&P(ch13): {'n': 500, 'ok': 119, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,2) Sub{1,2,3,4,6}>{Sub{1,2},Sub{2}}', 'sfail': None, 'nfail': None}
+named N=150 F3 fork==a chain: {'n': 500, 'ok': 176, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,1) Sub{1,2,3,4,6}>{Sub{1,2,4},Sub{4}}', 'sfail': None, 'nfail': None}
+named N=150 F2b fork<=P(ch12)|P(ch13): {'n': 500, 'ok': 244, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,3) Sub{1,2,3,4,6}>{Sub{2,3,4},Sub{1,3,4}}', 'sfail': None, 'nfail': None}
+named N=150 F2c fork>=P(ch12)&P(ch13): {'n': 500, 'ok': 316, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,5) Sub{1,2,5,6}>{Sub{2,4},Sub{1}}', 'sfail': None, 'nfail': None}
+named N=150 J1 join start1==chain(1,3): {'n': 500, 'ok': 500, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+named N=150 J2 join start2==chain(2,3): {'n': 500, 'ok': 500, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=150 F1 fork==phi(R1,P2|P3): {'n': 300, 'ok': 300, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=150 F2 fork<=P(ch12)&P(ch13): {'n': 300, 'ok': 16, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,2) rSub{1}>{rSub{2,3,4,8},rSub{1,2,3,6}}', 'sfail': None, 'nfail': None}
+random N=150 F3 fork==a chain: {'n': 300, 'ok': 15, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,1) rSub{1,2,3,5}>{rSub{1,2,3,5},rSub{6,7}}', 'sfail': None, 'nfail': None}
+random N=150 F2b fork<=P(ch12)|P(ch13): {'n': 300, 'ok': 80, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,3) rSub{1,2,3,6}>{rVec(0,1)(1,2)(2,0)(2,2),rSub{2,4,6,8}}', 'sfail': None, 'nfail': None}
+random N=150 F2c fork>=P(ch12)&P(ch13): {'n': 300, 'ok': 108, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': '(0,8) rVec(0,1)(0,3)(1,0)(2,0)>{rSub{6,7},rSub{2,3,7}}', 'sfail': None, 'nfail': None}
+random N=150 J1 join start1==chain(1,3): {'n': 300, 'ok': 300, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}
+random N=150 J2 join start2==chain(2,3): {'n': 300, 'ok': 300, 'ct': 0, 'sv': 0, 'nv': 0, 'fail': None, 'sfail': None, 'nfail': None}

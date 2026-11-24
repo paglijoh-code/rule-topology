@@ -1,0 +1,6 @@
+named: {"T==T' (skipped)": 1533, "holds: phi(R,T') <= phi(R,T) (equal)": 302, 'FAILS': 6105, '  of which incomparable': 6105, "holds: phi(R,T') <= phi(R,T) (strict)": 1321}
+  smallest: R=Sub{2,4} T=P(wythoff) T'=T+P(nim) |T'|=107 cell (1,3)
+  tiny search (T<=T', |T'|<=2, cells in 0..2): ('nim', [], [(0, 0)], '(0,1)')
+random: {'FAILS': 2729, '  of which incomparable': 2729, "holds: phi(R,T') <= phi(R,T) (strict)": 212, "T==T' (skipped)": 46, "holds: phi(R,T') <= phi(R,T) (equal)": 13}
+  smallest: R=rVec(3,0) T=P(rSub{3,6,7}) T'=T+P(rSub{2,4,6,8}) |T'|=1189 cell (6,2)
+  tiny search (T<=T', |T'|<=2, cells in 0..2): ('nim', [], [(0, 0)], '(0,1)')

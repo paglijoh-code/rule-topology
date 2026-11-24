@@ -1,0 +1,3297 @@
+{
+ "definition": "Rows r_a(d) = P(a, a+d) in {0,1} (1 = P-position), d < D. p_a = least tail period <= PMAX of r_a on [D-4*PMAX, D); pre(a) = least y with r_a(x) = r_a(x+p_a) for all y <= x < D-p_a. Wall M(a) = max_{b<=a} pre(b). Records of M closer than 40 rows are merged into one round; round j starts at T_j (first record row) and lifts M to L_j. Super-round of q rounds: class i, index k: t_k = T_{j0+i+kq}, w_k = L_{j0+i+kq}; gap_k = t_{k+1} - t_k.",
+ "generator": "census_10/export_walls.py (fit3.py exact fits; checks 2*t_k == 2*t0 + 2*gap0*k + s*k*(k-1) and w_k == w0 + Delta*k on every k in k_range)",
+ "file_formats": {
+  "pre": "int32 little-endian, one per row a = 0..a_stop-1: pre(a)",
+  "per": "int32 LE, p_a per row",
+  "rows_dump": "WS_DUMP: uint8 per cell, row-major, N rows x D bytes, r_a(d) in {0,1}"
+ },
+ "walls": [
+  {
+   "tag": "A",
+   "S1": [
+    1,
+    2,
+    5,
+    6
+   ],
+   "g": {
+    "pre": 0,
+    "per": 5,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 10,
+   "s": 14,
+   "lam": "7/5",
+   "c": 3.7796,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 52,
+     "gap0": 56,
+     "w0": 45,
+     "k_range": [
+      0,
+      117
+     ],
+     "t_k": {
+      "a2": "7",
+      "a1": "49",
+      "a0": 52,
+      "text": "7k^2 + 49k + 52"
+     },
+     "gap_k": {
+      "a1": 14,
+      "a0": 56
+     },
+     "w_k": {
+      "a1": 10,
+      "a0": 45,
+      "text": "45 + 10k"
+     },
+     "gap_over_w": {
+      "lam": "7/5",
+      "mu": "-7"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 6000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b/A.pre",
+    "per": "census_10/out/s2b/A.pre.per",
+    "summary": "census_10/out/s2b/A.json"
+   },
+   "legs": {
+    "inv_vL": "6/5",
+    "inv_vR": "1/5"
+   },
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "B",
+   "S1": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    8
+   ],
+   "g": {
+    "pre": 0,
+    "per": 6,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     2,
+     4
+    ]
+   },
+   "g_realised": false,
+   "S2_example": null,
+   "q": 1,
+   "j0": 2,
+   "Delta": 36,
+   "s": 36,
+   "lam": "1",
+   "c": 8.4853,
+   "Delta_over_gper": "6",
+   "classes": [
+    {
+     "t0": 415,
+     "gap0": 204,
+     "w0": 136,
+     "k_range": [
+      0,
+      70
+     ],
+     "t_k": {
+      "a2": "18",
+      "a1": "186",
+      "a0": 415,
+      "text": "18k^2 + 186k + 415"
+     },
+     "gap_k": {
+      "a1": 36,
+      "a0": 204
+     },
+     "w_k": {
+      "a1": 36,
+      "a0": 136,
+      "text": "136 + 36k"
+     },
+     "gap_over_w": {
+      "lam": "1",
+      "mu": "68"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b/B.pre",
+    "per": "census_10/out/s2b/B.pre.per",
+    "summary": "census_10/out/s2b/B.json",
+    "rows_dump": "census_10/out/B_rows.bin (wallscan 5000 1800 250, N*D bytes)"
+   },
+   "legs": {
+    "inv_vL": "1",
+    "inv_vR": "0"
+   },
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-2-4-7-9-10_g0123456_p0",
+   "S1": [
+    1,
+    2,
+    4,
+    7,
+    9,
+    10
+   ],
+   "g": {
+    "pre": 0,
+    "per": 7,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 14,
+   "s": 22,
+   "lam": "11/7",
+   "c": 4.2212,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 217,
+     "gap0": 165,
+     "w0": 123,
+     "k_range": [
+      0,
+      89
+     ],
+     "t_k": {
+      "a2": "11",
+      "a1": "154",
+      "a0": 217,
+      "text": "11k^2 + 154k + 217"
+     },
+     "gap_k": {
+      "a1": 22,
+      "a0": 165
+     },
+     "w_k": {
+      "a1": 14,
+      "a0": 123,
+      "text": "123 + 14k"
+     },
+     "gap_over_w": {
+      "lam": "11/7",
+      "mu": "-198/7"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-2-4-7-9-10_g0123456_p0.pre",
+    "per": "census_10/out/s2b_r10/s1-2-4-7-9-10_g0123456_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-2-4-7-9-10_g0123456_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-2-4-9-10_g0123456_p0",
+   "S1": [
+    1,
+    2,
+    4,
+    9,
+    10
+   ],
+   "g": {
+    "pre": 0,
+    "per": 7,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "q": 1,
+   "j0": 2,
+   "Delta": 14,
+   "s": 22,
+   "lam": "11/7",
+   "c": 4.2212,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 364,
+     "gap0": 209,
+     "w0": 152,
+     "k_range": [
+      0,
+      87
+     ],
+     "t_k": {
+      "a2": "11",
+      "a1": "198",
+      "a0": 364,
+      "text": "11k^2 + 198k + 364"
+     },
+     "gap_k": {
+      "a1": 22,
+      "a0": 209
+     },
+     "w_k": {
+      "a1": 14,
+      "a0": 152,
+      "text": "152 + 14k"
+     },
+     "gap_over_w": {
+      "lam": "11/7",
+      "mu": "-209/7"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-2-4-9-10_g0123456_p0.pre",
+    "per": "census_10/out/s2b_r10/s1-2-4-9-10_g0123456_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-2-4-9-10_g0123456_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-2-5-6-9-10_g012345678_p0",
+   "S1": [
+    1,
+    2,
+    5,
+    6,
+    9,
+    10
+   ],
+   "g": {
+    "pre": 0,
+    "per": 9,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 18,
+   "s": 22,
+   "lam": "11/9",
+   "c": 5.4272,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 175,
+     "gap0": 154,
+     "w0": 153,
+     "k_range": [
+      0,
+      89
+     ],
+     "t_k": {
+      "a2": "11",
+      "a1": "143",
+      "a0": 175,
+      "text": "11k^2 + 143k + 175"
+     },
+     "gap_k": {
+      "a1": 22,
+      "a0": 154
+     },
+     "w_k": {
+      "a1": 18,
+      "a0": 153,
+      "text": "153 + 18k"
+     },
+     "gap_over_w": {
+      "lam": "11/9",
+      "mu": "-33"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-2-5-6-9-10_g012345678_p0.pre",
+    "per": "census_10/out/s2b_r10/s1-2-5-6-9-10_g012345678_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-2-5-6-9-10_g012345678_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-2-5-6-9_g00112233041520314_p12",
+   "S1": [
+    1,
+    2,
+    5,
+    6,
+    9
+   ],
+   "g": {
+    "pre": 12,
+    "per": 5,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     5,
+     2,
+     0,
+     3,
+     1,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    3,
+    4,
+    6,
+    9
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 10,
+   "s": 7,
+   "lam": "7/10",
+   "c": 5.3452,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 183,
+     "gap0": 49,
+     "w0": 115,
+     "k_range": [
+      0,
+      163
+     ],
+     "t_k": {
+      "a2": "7/2",
+      "a1": "91/2",
+      "a0": 183,
+      "text": "3.5k^2 + 45.5k + 183"
+     },
+     "gap_k": {
+      "a1": 7,
+      "a0": 49
+     },
+     "w_k": {
+      "a1": 10,
+      "a0": 115,
+      "text": "115 + 10k"
+     },
+     "gap_over_w": {
+      "lam": "7/10",
+      "mu": "-63/2"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-2-5-6-9_g00112233041520314_p12.pre",
+    "per": "census_10/out/s2b_r10/s1-2-5-6-9_g00112233041520314_p12.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-2-5-6-9_g00112233041520314_p12.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-2-5-6-9_g01234_p0",
+   "S1": [
+    1,
+    2,
+    5,
+    6,
+    9
+   ],
+   "g": {
+    "pre": 0,
+    "per": 5,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 10,
+   "s": 14,
+   "lam": "7/5",
+   "c": 3.7796,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 52,
+     "gap0": 56,
+     "w0": 45,
+     "k_range": [
+      0,
+      117
+     ],
+     "t_k": {
+      "a2": "7",
+      "a1": "49",
+      "a0": 52,
+      "text": "7k^2 + 49k + 52"
+     },
+     "gap_k": {
+      "a1": 14,
+      "a0": 56
+     },
+     "w_k": {
+      "a1": 10,
+      "a0": 45,
+      "text": "45 + 10k"
+     },
+     "gap_over_w": {
+      "lam": "7/5",
+      "mu": "-7"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-2-5-6-9_g01234_p0.pre",
+    "per": "census_10/out/s2b_r10/s1-2-5-6-9_g01234_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-2-5-6-9_g01234_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-2-5-9_g012345678_p0",
+   "S1": [
+    1,
+    2,
+    5,
+    9
+   ],
+   "g": {
+    "pre": 0,
+    "per": 9,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 27,
+   "s": 30,
+   "lam": "10/9",
+   "c": 6.9714,
+   "Delta_over_gper": "3",
+   "classes": [
+    {
+     "t0": 85,
+     "gap0": 80,
+     "w0": 78,
+     "k_range": [
+      0,
+      80
+     ],
+     "t_k": {
+      "a2": "15",
+      "a1": "65",
+      "a0": 85,
+      "text": "15k^2 + 65k + 85"
+     },
+     "gap_k": {
+      "a1": 30,
+      "a0": 80
+     },
+     "w_k": {
+      "a1": 27,
+      "a0": 78,
+      "text": "78 + 27k"
+     },
+     "gap_over_w": {
+      "lam": "10/9",
+      "mu": "-20/3"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-2-5-9_g012345678_p0.pre",
+    "per": "census_10/out/s2b_r10/s1-2-5-9_g012345678_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-2-5-9_g012345678_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-2-7-9-10_g0123456_p0",
+   "S1": [
+    1,
+    2,
+    7,
+    9,
+    10
+   ],
+   "g": {
+    "pre": 0,
+    "per": 7,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "q": 1,
+   "j0": 2,
+   "Delta": 14,
+   "s": 22,
+   "lam": "11/7",
+   "c": 4.2212,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 327,
+     "gap0": 187,
+     "w0": 137,
+     "k_range": [
+      0,
+      88
+     ],
+     "t_k": {
+      "a2": "11",
+      "a1": "176",
+      "a0": 327,
+      "text": "11k^2 + 176k + 327"
+     },
+     "gap_k": {
+      "a1": 22,
+      "a0": 187
+     },
+     "w_k": {
+      "a1": 14,
+      "a0": 137,
+      "text": "137 + 14k"
+     },
+     "gap_over_w": {
+      "lam": "11/7",
+      "mu": "-198/7"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-2-7-9-10_g0123456_p0.pre",
+    "per": "census_10/out/s2b_r10/s1-2-7-9-10_g0123456_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-2-7-9-10_g0123456_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-3-4-10_g00112230413041522001132403140213320011322_p24",
+   "S1": [
+    1,
+    3,
+    4,
+    10
+   ],
+   "g": {
+    "pre": 24,
+    "per": 17,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     0,
+     4,
+     1,
+     3,
+     0,
+     4,
+     1,
+     5,
+     2,
+     2,
+     0,
+     0,
+     1,
+     1,
+     3,
+     2,
+     4,
+     0,
+     3,
+     1,
+     4,
+     0,
+     2,
+     1,
+     3,
+     3,
+     2,
+     0,
+     0,
+     1,
+     1,
+     3,
+     2,
+     2
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    3,
+    5,
+    8,
+    9
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 34,
+   "s": 40,
+   "lam": "20/17",
+   "c": 7.6026,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 189,
+     "gap0": 110,
+     "w0": 183,
+     "k_range": [
+      0,
+      69
+     ],
+     "t_k": {
+      "a2": "20",
+      "a1": "90",
+      "a0": 189,
+      "text": "20k^2 + 90k + 189"
+     },
+     "gap_k": {
+      "a1": 40,
+      "a0": 110
+     },
+     "w_k": {
+      "a1": 34,
+      "a0": 183,
+      "text": "183 + 34k"
+     },
+     "gap_over_w": {
+      "lam": "20/17",
+      "mu": "-1790/17"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-3-4-10_g00112230413041522001132403140213320011322_p24.pre",
+    "per": "census_10/out/s2b_r10/s1-3-4-10_g00112230413041522001132403140213320011322_p24.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-3-4-10_g00112230413041522001132403140213320011322_p24.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-3-4-6-8-10_g0001112023134002113_p13",
+   "S1": [
+    1,
+    3,
+    4,
+    6,
+    8,
+    10
+   ],
+   "g": {
+    "pre": 13,
+    "per": 6,
+    "pattern": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     2,
+     0,
+     2,
+     3,
+     1,
+     3,
+     4,
+     0,
+     0,
+     2,
+     1,
+     1,
+     3
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    3,
+    4,
+    8,
+    10
+   ],
+   "q": 3,
+   "j0": 2,
+   "Delta": 36,
+   "s": 252,
+   "lam": "7",
+   "c": 3.2071,
+   "Delta_over_gper": "6",
+   "classes": [
+    {
+     "t0": 124,
+     "gap0": 378,
+     "w0": 48,
+     "k_range": [
+      0,
+      28
+     ],
+     "t_k": {
+      "a2": "126",
+      "a1": "252",
+      "a0": 124,
+      "text": "126k^2 + 252k + 124"
+     },
+     "gap_k": {
+      "a1": 252,
+      "a0": 378
+     },
+     "w_k": {
+      "a1": 36,
+      "a0": 48,
+      "text": "48 + 36k"
+     },
+     "gap_over_w": {
+      "lam": "7",
+      "mu": "42"
+     }
+    },
+    {
+     "t0": 215,
+     "gap0": 462,
+     "w0": 60,
+     "k_range": [
+      0,
+      27
+     ],
+     "t_k": {
+      "a2": "126",
+      "a1": "336",
+      "a0": 215,
+      "text": "126k^2 + 336k + 215"
+     },
+     "gap_k": {
+      "a1": 252,
+      "a0": 462
+     },
+     "w_k": {
+      "a1": 36,
+      "a0": 60,
+      "text": "60 + 36k"
+     },
+     "gap_over_w": {
+      "lam": "7",
+      "mu": "42"
+     }
+    },
+    {
+     "t0": 348,
+     "gap0": 546,
+     "w0": 72,
+     "k_range": [
+      0,
+      27
+     ],
+     "t_k": {
+      "a2": "126",
+      "a1": "420",
+      "a0": 348,
+      "text": "126k^2 + 420k + 348"
+     },
+     "gap_k": {
+      "a1": 252,
+      "a0": 546
+     },
+     "w_k": {
+      "a1": 36,
+      "a0": 72,
+      "text": "72 + 36k"
+     },
+     "gap_over_w": {
+      "lam": "7",
+      "mu": "42"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-3-4-6-8-10_g0001112023134002113_p13.pre",
+    "per": "census_10/out/s2b_r10/s1-3-4-6-8-10_g0001112023134002113_p13.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-3-4-6-8-10_g0001112023134002113_p13.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-3-4-6-8-10_g0001112023134005114002113_p19",
+   "S1": [
+    1,
+    3,
+    4,
+    6,
+    8,
+    10
+   ],
+   "g": {
+    "pre": 19,
+    "per": 6,
+    "pattern": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     2,
+     0,
+     2,
+     3,
+     1,
+     3,
+     4,
+     0,
+     0,
+     5,
+     1,
+     1,
+     4,
+     0,
+     0,
+     2,
+     1,
+     1,
+     3
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    3,
+    4,
+    8,
+    9,
+    10
+   ],
+   "q": 3,
+   "j0": 2,
+   "Delta": 36,
+   "s": 252,
+   "lam": "7",
+   "c": 3.2071,
+   "Delta_over_gper": "6",
+   "classes": [
+    {
+     "t0": 124,
+     "gap0": 378,
+     "w0": 48,
+     "k_range": [
+      0,
+      28
+     ],
+     "t_k": {
+      "a2": "126",
+      "a1": "252",
+      "a0": 124,
+      "text": "126k^2 + 252k + 124"
+     },
+     "gap_k": {
+      "a1": 252,
+      "a0": 378
+     },
+     "w_k": {
+      "a1": 36,
+      "a0": 48,
+      "text": "48 + 36k"
+     },
+     "gap_over_w": {
+      "lam": "7",
+      "mu": "42"
+     }
+    },
+    {
+     "t0": 215,
+     "gap0": 462,
+     "w0": 60,
+     "k_range": [
+      0,
+      27
+     ],
+     "t_k": {
+      "a2": "126",
+      "a1": "336",
+      "a0": 215,
+      "text": "126k^2 + 336k + 215"
+     },
+     "gap_k": {
+      "a1": 252,
+      "a0": 462
+     },
+     "w_k": {
+      "a1": 36,
+      "a0": 60,
+      "text": "60 + 36k"
+     },
+     "gap_over_w": {
+      "lam": "7",
+      "mu": "42"
+     }
+    },
+    {
+     "t0": 348,
+     "gap0": 546,
+     "w0": 72,
+     "k_range": [
+      0,
+      27
+     ],
+     "t_k": {
+      "a2": "126",
+      "a1": "420",
+      "a0": 348,
+      "text": "126k^2 + 420k + 348"
+     },
+     "gap_k": {
+      "a1": 252,
+      "a0": 546
+     },
+     "w_k": {
+      "a1": 36,
+      "a0": 72,
+      "text": "72 + 36k"
+     },
+     "gap_over_w": {
+      "lam": "7",
+      "mu": "42"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-3-4-6-8-10_g0001112023134005114002113_p19.pre",
+    "per": "census_10/out/s2b_r10/s1-3-4-6-8-10_g0001112023134005114002113_p19.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-3-4-6-8-10_g0001112023134005114002113_p19.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-3-5-8_g001122330410213203_p10",
+   "S1": [
+    1,
+    3,
+    5,
+    8
+   ],
+   "g": {
+    "pre": 10,
+    "per": 8,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     0,
+     2,
+     1,
+     3,
+     2,
+     0,
+     3
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    4,
+    6,
+    9
+   ],
+   "q": 4,
+   "j0": 3,
+   "Delta": 48,
+   "s": 156,
+   "lam": "13/4",
+   "c": 5.4349,
+   "Delta_over_gper": "6",
+   "classes": [
+    {
+     "t0": 227,
+     "gap0": 286,
+     "w0": 106,
+     "k_range": [
+      0,
+      35
+     ],
+     "t_k": {
+      "a2": "78",
+      "a1": "208",
+      "a0": 227,
+      "text": "78k^2 + 208k + 227"
+     },
+     "gap_k": {
+      "a1": 156,
+      "a0": 286
+     },
+     "w_k": {
+      "a1": 48,
+      "a0": 106,
+      "text": "106 + 48k"
+     },
+     "gap_over_w": {
+      "lam": "13/4",
+      "mu": "-117/2"
+     }
+    },
+    {
+     "t0": 315,
+     "gap0": 364,
+     "w0": 116,
+     "k_range": [
+      0,
+      34
+     ],
+     "t_k": {
+      "a2": "78",
+      "a1": "286",
+      "a0": 315,
+      "text": "78k^2 + 286k + 315"
+     },
+     "gap_k": {
+      "a1": 156,
+      "a0": 364
+     },
+     "w_k": {
+      "a1": 48,
+      "a0": 116,
+      "text": "116 + 48k"
+     },
+     "gap_over_w": {
+      "lam": "13/4",
+      "mu": "-13"
+     }
+    },
+    {
+     "t0": 357,
+     "gap0": 364,
+     "w0": 130,
+     "k_range": [
+      0,
+      34
+     ],
+     "t_k": {
+      "a2": "78",
+      "a1": "286",
+      "a0": 357,
+      "text": "78k^2 + 286k + 357"
+     },
+     "gap_k": {
+      "a1": 156,
+      "a0": 364
+     },
+     "w_k": {
+      "a1": 48,
+      "a0": 130,
+      "text": "130 + 48k"
+     },
+     "gap_over_w": {
+      "lam": "13/4",
+      "mu": "-117/2"
+     }
+    },
+    {
+     "t0": 471,
+     "gap0": 442,
+     "w0": 140,
+     "k_range": [
+      0,
+      34
+     ],
+     "t_k": {
+      "a2": "78",
+      "a1": "364",
+      "a0": 471,
+      "text": "78k^2 + 364k + 471"
+     },
+     "gap_k": {
+      "a1": 156,
+      "a0": 442
+     },
+     "w_k": {
+      "a1": 48,
+      "a0": 140,
+      "text": "140 + 48k"
+     },
+     "gap_over_w": {
+      "lam": "13/4",
+      "mu": "-13"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-3-5-8_g001122330410213203_p10.pre",
+    "per": "census_10/out/s2b_r10/s1-3-5-8_g001122330410213203_p10.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-3-5-8_g001122330410213203_p10.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-4-6-8_g0011223340516203142536_p0",
+   "S1": [
+    1,
+    4,
+    6,
+    8
+   ],
+   "g": {
+    "pre": 0,
+    "per": 22,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     4,
+     0,
+     5,
+     1,
+     6,
+     2,
+     0,
+     3,
+     1,
+     4,
+     2,
+     5,
+     3,
+     6
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    10
+   ],
+   "q": 2,
+   "j0": 3,
+   "Delta": 88,
+   "s": 440,
+   "lam": "5",
+   "c": 5.933,
+   "Delta_over_gper": "4",
+   "classes": [
+    {
+     "t0": 483,
+     "gap0": 660,
+     "w0": 107,
+     "k_range": [
+      0,
+      21
+     ],
+     "t_k": {
+      "a2": "220",
+      "a1": "440",
+      "a0": 483,
+      "text": "220k^2 + 440k + 483"
+     },
+     "gap_k": {
+      "a1": 440,
+      "a0": 660
+     },
+     "w_k": {
+      "a1": 88,
+      "a0": 107,
+      "text": "107 + 88k"
+     },
+     "gap_over_w": {
+      "lam": "5",
+      "mu": "125"
+     }
+    },
+    {
+     "t0": 916,
+     "gap0": 1100,
+     "w0": 193,
+     "k_range": [
+      0,
+      20
+     ],
+     "t_k": {
+      "a2": "220",
+      "a1": "880",
+      "a0": 916,
+      "text": "220k^2 + 880k + 916"
+     },
+     "gap_k": {
+      "a1": 440,
+      "a0": 1100
+     },
+     "w_k": {
+      "a1": 88,
+      "a0": 193,
+      "text": "193 + 88k"
+     },
+     "gap_over_w": {
+      "lam": "5",
+      "mu": "135"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-4-6-8_g0011223340516203142536_p0.pre",
+    "per": "census_10/out/s2b_r10/s1-4-6-8_g0011223340516203142536_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-4-6-8_g0011223340516203142536_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-4-7-8-9-10_g00112233041520310213_p12",
+   "S1": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    10
+   ],
+   "g": {
+    "pre": 12,
+    "per": 8,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     5,
+     2,
+     0,
+     3,
+     1,
+     0,
+     2,
+     1,
+     3
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    4,
+    6,
+    9,
+    10
+   ],
+   "q": 1,
+   "j0": 2,
+   "Delta": 16,
+   "s": 16,
+   "lam": "1",
+   "c": 5.6569,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 180,
+     "gap0": 80,
+     "w0": 61,
+     "k_range": [
+      0,
+      108
+     ],
+     "t_k": {
+      "a2": "8",
+      "a1": "72",
+      "a0": 180,
+      "text": "8k^2 + 72k + 180"
+     },
+     "gap_k": {
+      "a1": 16,
+      "a0": 80
+     },
+     "w_k": {
+      "a1": 16,
+      "a0": 61,
+      "text": "61 + 16k"
+     },
+     "gap_over_w": {
+      "lam": "1",
+      "mu": "19"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-4-7-8-9-10_g00112233041520310213_p12.pre",
+    "per": "census_10/out/s2b_r10/s1-4-7-8-9-10_g00112233041520310213_p12.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-4-7-8-9-10_g00112233041520310213_p12.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s1-6-8-9-10_g0001112220331442_p0",
+   "S1": [
+    1,
+    6,
+    8,
+    9,
+    10
+   ],
+   "g": {
+    "pre": 0,
+    "per": 16,
+    "pattern": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     0,
+     3,
+     3,
+     1,
+     4,
+     4,
+     2
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    3,
+    4,
+    5,
+    6,
+    10
+   ],
+   "q": 2,
+   "j0": 191,
+   "Delta": 48,
+   "s": 48,
+   "lam": "1",
+   "c": 9.798,
+   "Delta_over_gper": "3",
+   "classes": [
+    {
+     "t0": 24352,
+     "gap0": 3344,
+     "w0": 3465,
+     "k_range": [
+      0,
+      20
+     ],
+     "t_k": {
+      "a2": "24",
+      "a1": "3320",
+      "a0": 24352,
+      "text": "24k^2 + 3320k + 24352"
+     },
+     "gap_k": {
+      "a1": 48,
+      "a0": 3344
+     },
+     "w_k": {
+      "a1": 48,
+      "a0": 3465,
+      "text": "3465 + 48k"
+     },
+     "gap_over_w": {
+      "lam": "1",
+      "mu": "-121"
+     }
+    },
+    {
+     "t0": 27585,
+     "gap0": 3392,
+     "w0": 3471,
+     "k_range": [
+      0,
+      19
+     ],
+     "t_k": {
+      "a2": "24",
+      "a1": "3368",
+      "a0": 27585,
+      "text": "24k^2 + 3368k + 27585"
+     },
+     "gap_k": {
+      "a1": 48,
+      "a0": 3392
+     },
+     "w_k": {
+      "a1": 48,
+      "a0": 3471,
+      "text": "3471 + 48k"
+     },
+     "gap_over_w": {
+      "lam": "1",
+      "mu": "-79"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s1-6-8-9-10_g0001112220331442_p0.pre",
+    "per": "census_10/out/s2b_r10/s1-6-8-9-10_g0001112220331442_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s1-6-8-9-10_g0001112220331442_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s2-3-6-7-10_g0123456_p0",
+   "S1": [
+    2,
+    3,
+    6,
+    7,
+    10
+   ],
+   "g": {
+    "pre": 0,
+    "per": 7,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "q": 1,
+   "j0": 2,
+   "Delta": 35,
+   "s": 65,
+   "lam": "13/7",
+   "c": 6.1394,
+   "Delta_over_gper": "5",
+   "classes": [
+    {
+     "t0": 308,
+     "gap0": 234,
+     "w0": 131,
+     "k_range": [
+      0,
+      53
+     ],
+     "t_k": {
+      "a2": "65/2",
+      "a1": "403/2",
+      "a0": 308,
+      "text": "32.5k^2 + 201.5k + 308"
+     },
+     "gap_k": {
+      "a1": 65,
+      "a0": 234
+     },
+     "w_k": {
+      "a1": 35,
+      "a0": 131,
+      "text": "131 + 35k"
+     },
+     "gap_over_w": {
+      "lam": "13/7",
+      "mu": "-65/7"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s2-3-6-7-10_g0123456_p0.pre",
+    "per": "census_10/out/s2b_r10/s2-3-6-7-10_g0123456_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s2-3-6-7-10_g0123456_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s3-4-9-10_g00112233041520314_p12",
+   "S1": [
+    3,
+    4,
+    9,
+    10
+   ],
+   "g": {
+    "pre": 12,
+    "per": 5,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     5,
+     2,
+     0,
+     3,
+     1,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    3,
+    4,
+    6,
+    9
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 20,
+   "s": 52,
+   "lam": "13/5",
+   "c": 3.9223,
+   "Delta_over_gper": "4",
+   "classes": [
+    {
+     "t0": 190,
+     "gap0": 182,
+     "w0": 77,
+     "k_range": [
+      0,
+      60
+     ],
+     "t_k": {
+      "a2": "26",
+      "a1": "156",
+      "a0": 190,
+      "text": "26k^2 + 156k + 190"
+     },
+     "gap_k": {
+      "a1": 52,
+      "a0": 182
+     },
+     "w_k": {
+      "a1": 20,
+      "a0": 77,
+      "text": "77 + 20k"
+     },
+     "gap_over_w": {
+      "lam": "13/5",
+      "mu": "-91/5"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s3-4-9-10_g00112233041520314_p12.pre",
+    "per": "census_10/out/s2b_r10/s3-4-9-10_g00112233041520314_p12.pre.per",
+    "summary": "census_10/out/s2b_r10/s3-4-9-10_g00112233041520314_p12.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s3-4-9-10_g01234_p0",
+   "S1": [
+    3,
+    4,
+    9,
+    10
+   ],
+   "g": {
+    "pre": 0,
+    "per": 5,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 20,
+   "s": 52,
+   "lam": "13/5",
+   "c": 3.9223,
+   "Delta_over_gper": "4",
+   "classes": [
+    {
+     "t0": 143,
+     "gap0": 169,
+     "w0": 72,
+     "k_range": [
+      0,
+      60
+     ],
+     "t_k": {
+      "a2": "26",
+      "a1": "143",
+      "a0": 143,
+      "text": "26k^2 + 143k + 143"
+     },
+     "gap_k": {
+      "a1": 52,
+      "a0": 169
+     },
+     "w_k": {
+      "a1": 20,
+      "a0": 72,
+      "text": "72 + 20k"
+     },
+     "gap_over_w": {
+      "lam": "13/5",
+      "mu": "-91/5"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s3-4-9-10_g01234_p0.pre",
+    "per": "census_10/out/s2b_r10/s3-4-9-10_g01234_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s3-4-9-10_g01234_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s3-5-6-7-8_g00112233041520314_p12",
+   "S1": [
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "g": {
+    "pre": 12,
+    "per": 5,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     5,
+     2,
+     0,
+     3,
+     1,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    3,
+    4,
+    6,
+    9
+   ],
+   "q": 2,
+   "j0": 1,
+   "Delta": 20,
+   "s": 44,
+   "lam": "11/5",
+   "c": 4.264,
+   "Delta_over_gper": "4",
+   "classes": [
+    {
+     "t0": 115,
+     "gap0": 132,
+     "w0": 63,
+     "k_range": [
+      0,
+      65
+     ],
+     "t_k": {
+      "a2": "22",
+      "a1": "110",
+      "a0": 115,
+      "text": "22k^2 + 110k + 115"
+     },
+     "gap_k": {
+      "a1": 44,
+      "a0": 132
+     },
+     "w_k": {
+      "a1": 20,
+      "a0": 63,
+      "text": "63 + 20k"
+     },
+     "gap_over_w": {
+      "lam": "11/5",
+      "mu": "-33/5"
+     }
+    },
+    {
+     "t0": 192,
+     "gap0": 154,
+     "w0": 73,
+     "k_range": [
+      0,
+      65
+     ],
+     "t_k": {
+      "a2": "22",
+      "a1": "132",
+      "a0": 192,
+      "text": "22k^2 + 132k + 192"
+     },
+     "gap_k": {
+      "a1": 44,
+      "a0": 154
+     },
+     "w_k": {
+      "a1": 20,
+      "a0": 73,
+      "text": "73 + 20k"
+     },
+     "gap_over_w": {
+      "lam": "11/5",
+      "mu": "-33/5"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s3-5-6-7-8_g00112233041520314_p12.pre",
+    "per": "census_10/out/s2b_r10/s3-5-6-7-8_g00112233041520314_p12.pre.per",
+    "summary": "census_10/out/s2b_r10/s3-5-6-7-8_g00112233041520314_p12.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s4-5-6-7-8-9_g00112233041520314_p12",
+   "S1": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "g": {
+    "pre": 12,
+    "per": 5,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     5,
+     2,
+     0,
+     3,
+     1,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    3,
+    4,
+    6,
+    9
+   ],
+   "q": 1,
+   "j0": 2,
+   "Delta": 25,
+   "s": 65,
+   "lam": "13/5",
+   "c": 4.3853,
+   "Delta_over_gper": "5",
+   "classes": [
+    {
+     "t0": 203,
+     "gap0": 208,
+     "w0": 82,
+     "k_range": [
+      0,
+      53
+     ],
+     "t_k": {
+      "a2": "65/2",
+      "a1": "351/2",
+      "a0": 203,
+      "text": "32.5k^2 + 175.5k + 203"
+     },
+     "gap_k": {
+      "a1": 65,
+      "a0": 208
+     },
+     "w_k": {
+      "a1": 25,
+      "a0": 82,
+      "text": "82 + 25k"
+     },
+     "gap_over_w": {
+      "lam": "13/5",
+      "mu": "-26/5"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s4-5-6-7-8-9_g00112233041520314_p12.pre",
+    "per": "census_10/out/s2b_r10/s4-5-6-7-8-9_g00112233041520314_p12.pre.per",
+    "summary": "census_10/out/s2b_r10/s4-5-6-7-8-9_g00112233041520314_p12.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s4-5-6-7-8-9_g01234_p0",
+   "S1": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "g": {
+    "pre": 0,
+    "per": 5,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 25,
+   "s": 65,
+   "lam": "13/5",
+   "c": 4.3853,
+   "Delta_over_gper": "5",
+   "classes": [
+    {
+     "t0": 218,
+     "gap0": 195,
+     "w0": 77,
+     "k_range": [
+      0,
+      53
+     ],
+     "t_k": {
+      "a2": "65/2",
+      "a1": "325/2",
+      "a0": 218,
+      "text": "32.5k^2 + 162.5k + 218"
+     },
+     "gap_k": {
+      "a1": 65,
+      "a0": 195
+     },
+     "w_k": {
+      "a1": 25,
+      "a0": 77,
+      "text": "77 + 25k"
+     },
+     "gap_over_w": {
+      "lam": "13/5",
+      "mu": "-26/5"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s4-5-6-7-8-9_g01234_p0.pre",
+    "per": "census_10/out/s2b_r10/s4-5-6-7-8-9_g01234_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s4-5-6-7-8-9_g01234_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s4-5-6-8-9_g00112233041520314_p12",
+   "S1": [
+    4,
+    5,
+    6,
+    8,
+    9
+   ],
+   "g": {
+    "pre": 12,
+    "per": 5,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     5,
+     2,
+     0,
+     3,
+     1,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    3,
+    4,
+    6,
+    9
+   ],
+   "q": 1,
+   "j0": 2,
+   "Delta": 25,
+   "s": 65,
+   "lam": "13/5",
+   "c": 4.3853,
+   "Delta_over_gper": "5",
+   "classes": [
+    {
+     "t0": 203,
+     "gap0": 208,
+     "w0": 82,
+     "k_range": [
+      0,
+      53
+     ],
+     "t_k": {
+      "a2": "65/2",
+      "a1": "351/2",
+      "a0": 203,
+      "text": "32.5k^2 + 175.5k + 203"
+     },
+     "gap_k": {
+      "a1": 65,
+      "a0": 208
+     },
+     "w_k": {
+      "a1": 25,
+      "a0": 82,
+      "text": "82 + 25k"
+     },
+     "gap_over_w": {
+      "lam": "13/5",
+      "mu": "-26/5"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s4-5-6-8-9_g00112233041520314_p12.pre",
+    "per": "census_10/out/s2b_r10/s4-5-6-8-9_g00112233041520314_p12.pre.per",
+    "summary": "census_10/out/s2b_r10/s4-5-6-8-9_g00112233041520314_p12.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s4-5-6-8-9_g01234_p0",
+   "S1": [
+    4,
+    5,
+    6,
+    8,
+    9
+   ],
+   "g": {
+    "pre": 0,
+    "per": 5,
+    "pattern": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "q": 1,
+   "j0": 1,
+   "Delta": 25,
+   "s": 65,
+   "lam": "13/5",
+   "c": 4.3853,
+   "Delta_over_gper": "5",
+   "classes": [
+    {
+     "t0": 54,
+     "gap0": 104,
+     "w0": 42,
+     "k_range": [
+      0,
+      55
+     ],
+     "t_k": {
+      "a2": "65/2",
+      "a1": "143/2",
+      "a0": 54,
+      "text": "32.5k^2 + 71.5k + 54"
+     },
+     "gap_k": {
+      "a1": 65,
+      "a0": 104
+     },
+     "w_k": {
+      "a1": 25,
+      "a0": 42,
+      "text": "42 + 25k"
+     },
+     "gap_over_w": {
+      "lam": "13/5",
+      "mu": "-26/5"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s4-5-6-8-9_g01234_p0.pre",
+    "per": "census_10/out/s2b_r10/s4-5-6-8-9_g01234_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s4-5-6-8-9_g01234_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s4-5-7-8-9_g00112233041520314_p12",
+   "S1": [
+    4,
+    5,
+    7,
+    8,
+    9
+   ],
+   "g": {
+    "pre": 12,
+    "per": 5,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     5,
+     2,
+     0,
+     3,
+     1,
+     4
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    3,
+    4,
+    6,
+    9
+   ],
+   "q": 1,
+   "j0": 2,
+   "Delta": 25,
+   "s": 65,
+   "lam": "13/5",
+   "c": 4.3853,
+   "Delta_over_gper": "5",
+   "classes": [
+    {
+     "t0": 203,
+     "gap0": 208,
+     "w0": 82,
+     "k_range": [
+      0,
+      53
+     ],
+     "t_k": {
+      "a2": "65/2",
+      "a1": "351/2",
+      "a0": 203,
+      "text": "32.5k^2 + 175.5k + 203"
+     },
+     "gap_k": {
+      "a1": 65,
+      "a0": 208
+     },
+     "w_k": {
+      "a1": 25,
+      "a0": 82,
+      "text": "82 + 25k"
+     },
+     "gap_over_w": {
+      "lam": "13/5",
+      "mu": "-26/5"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s4-5-7-8-9_g00112233041520314_p12.pre",
+    "per": "census_10/out/s2b_r10/s4-5-7-8-9_g00112233041520314_p12.pre.per",
+    "summary": "census_10/out/s2b_r10/s4-5-7-8-9_g00112233041520314_p12.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s5-6-7-9_g001122330410213203_p10",
+   "S1": [
+    5,
+    6,
+    7,
+    9
+   ],
+   "g": {
+    "pre": 10,
+    "per": 8,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     0,
+     2,
+     1,
+     3,
+     2,
+     0,
+     3
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    4,
+    6,
+    9
+   ],
+   "q": 2,
+   "j0": 1,
+   "Delta": 80,
+   "s": 420,
+   "lam": "21/4",
+   "c": 5.5205,
+   "Delta_over_gper": "10",
+   "classes": [
+    {
+     "t0": 86,
+     "gap0": 532,
+     "w0": 80,
+     "k_range": [
+      0,
+      22
+     ],
+     "t_k": {
+      "a2": "210",
+      "a1": "322",
+      "a0": 86,
+      "text": "210k^2 + 322k + 86"
+     },
+     "gap_k": {
+      "a1": 420,
+      "a0": 532
+     },
+     "w_k": {
+      "a1": 80,
+      "a0": 80,
+      "text": "80 + 80k"
+     },
+     "gap_over_w": {
+      "lam": "21/4",
+      "mu": "112"
+     }
+    },
+    {
+     "t0": 306,
+     "gap0": 742,
+     "w0": 120,
+     "k_range": [
+      0,
+      21
+     ],
+     "t_k": {
+      "a2": "210",
+      "a1": "532",
+      "a0": 306,
+      "text": "210k^2 + 532k + 306"
+     },
+     "gap_k": {
+      "a1": 420,
+      "a0": 742
+     },
+     "w_k": {
+      "a1": 80,
+      "a0": 120,
+      "text": "120 + 80k"
+     },
+     "gap_over_w": {
+      "lam": "21/4",
+      "mu": "112"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s5-6-7-9_g001122330410213203_p10.pre",
+    "per": "census_10/out/s2b_r10/s5-6-7-9_g001122330410213203_p10.pre.per",
+    "summary": "census_10/out/s2b_r10/s5-6-7-9_g001122330410213203_p10.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s5-6-7-9_g00112233041520310213_p12",
+   "S1": [
+    5,
+    6,
+    7,
+    9
+   ],
+   "g": {
+    "pre": 12,
+    "per": 8,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     0,
+     4,
+     1,
+     5,
+     2,
+     0,
+     3,
+     1,
+     0,
+     2,
+     1,
+     3
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    4,
+    6,
+    9,
+    10
+   ],
+   "q": 2,
+   "j0": 2,
+   "Delta": 80,
+   "s": 420,
+   "lam": "21/4",
+   "c": 5.5205,
+   "Delta_over_gper": "10",
+   "classes": [
+    {
+     "t0": 327,
+     "gap0": 700,
+     "w0": 112,
+     "k_range": [
+      0,
+      21
+     ],
+     "t_k": {
+      "a2": "210",
+      "a1": "490",
+      "a0": 327,
+      "text": "210k^2 + 490k + 327"
+     },
+     "gap_k": {
+      "a1": 420,
+      "a0": 700
+     },
+     "w_k": {
+      "a1": 80,
+      "a0": 112,
+      "text": "112 + 80k"
+     },
+     "gap_over_w": {
+      "lam": "21/4",
+      "mu": "112"
+     }
+    },
+    {
+     "t0": 631,
+     "gap0": 910,
+     "w0": 152,
+     "k_range": [
+      0,
+      21
+     ],
+     "t_k": {
+      "a2": "210",
+      "a1": "700",
+      "a0": 631,
+      "text": "210k^2 + 700k + 631"
+     },
+     "gap_k": {
+      "a1": 420,
+      "a0": 910
+     },
+     "w_k": {
+      "a1": 80,
+      "a0": 152,
+      "text": "152 + 80k"
+     },
+     "gap_over_w": {
+      "lam": "21/4",
+      "mu": "112"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s5-6-7-9_g00112233041520310213_p12.pre",
+    "per": "census_10/out/s2b_r10/s5-6-7-9_g00112233041520310213_p12.pre.per",
+    "summary": "census_10/out/s2b_r10/s5-6-7-9_g00112233041520310213_p12.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s5-6-7-9_g0011223340510213203_p11",
+   "S1": [
+    5,
+    6,
+    7,
+    9
+   ],
+   "g": {
+    "pre": 11,
+    "per": 8,
+    "pattern": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     4,
+     0,
+     5,
+     1,
+     0,
+     2,
+     1,
+     3,
+     2,
+     0,
+     3
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    2,
+    4,
+    6,
+    7,
+    10
+   ],
+   "q": 2,
+   "j0": 2,
+   "Delta": 80,
+   "s": 420,
+   "lam": "21/4",
+   "c": 5.5205,
+   "Delta_over_gper": "10",
+   "classes": [
+    {
+     "t0": 493,
+     "gap0": 826,
+     "w0": 136,
+     "k_range": [
+      0,
+      21
+     ],
+     "t_k": {
+      "a2": "210",
+      "a1": "616",
+      "a0": 493,
+      "text": "210k^2 + 616k + 493"
+     },
+     "gap_k": {
+      "a1": 420,
+      "a0": 826
+     },
+     "w_k": {
+      "a1": 80,
+      "a0": 136,
+      "text": "136 + 80k"
+     },
+     "gap_over_w": {
+      "lam": "21/4",
+      "mu": "112"
+     }
+    },
+    {
+     "t0": 847,
+     "gap0": 1036,
+     "w0": 176,
+     "k_range": [
+      0,
+      20
+     ],
+     "t_k": {
+      "a2": "210",
+      "a1": "826",
+      "a0": 847,
+      "text": "210k^2 + 826k + 847"
+     },
+     "gap_k": {
+      "a1": 420,
+      "a0": 1036
+     },
+     "w_k": {
+      "a1": 80,
+      "a0": 176,
+      "text": "176 + 80k"
+     },
+     "gap_over_w": {
+      "lam": "21/4",
+      "mu": "112"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s5-6-7-9_g0011223340510213203_p11.pre",
+    "per": "census_10/out/s2b_r10/s5-6-7-9_g0011223340510213203_p11.pre.per",
+    "summary": "census_10/out/s2b_r10/s5-6-7-9_g0011223340510213203_p11.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "r10:s6-7-8_g0120120123_p0",
+   "S1": [
+    6,
+    7,
+    8
+   ],
+   "g": {
+    "pre": 0,
+    "per": 10,
+    "pattern": [
+     0,
+     1,
+     2,
+     0,
+     1,
+     2,
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   "g_realised": true,
+   "S2_example": [
+    1,
+    2,
+    9
+   ],
+   "q": 4,
+   "j0": 1,
+   "Delta": 40,
+   "s": 360,
+   "lam": "9",
+   "c": 2.9814,
+   "Delta_over_gper": "4",
+   "classes": [
+    {
+     "t0": 181,
+     "gap0": 360,
+     "w0": 59,
+     "k_range": [
+      0,
+      24
+     ],
+     "t_k": {
+      "a2": "180",
+      "a1": "180",
+      "a0": 181,
+      "text": "180k^2 + 180k + 181"
+     },
+     "gap_k": {
+      "a1": 360,
+      "a0": 360
+     },
+     "w_k": {
+      "a1": 40,
+      "a0": 59,
+      "text": "59 + 40k"
+     },
+     "gap_over_w": {
+      "lam": "9",
+      "mu": "-171"
+     }
+    },
+    {
+     "t0": 264,
+     "gap0": 360,
+     "w0": 67,
+     "k_range": [
+      0,
+      24
+     ],
+     "t_k": {
+      "a2": "180",
+      "a1": "180",
+      "a0": 264,
+      "text": "180k^2 + 180k + 264"
+     },
+     "gap_k": {
+      "a1": 360,
+      "a0": 360
+     },
+     "w_k": {
+      "a1": 40,
+      "a0": 67,
+      "text": "67 + 40k"
+     },
+     "gap_over_w": {
+      "lam": "9",
+      "mu": "-243"
+     }
+    },
+    {
+     "t0": 331,
+     "gap0": 540,
+     "w0": 73,
+     "k_range": [
+      0,
+      23
+     ],
+     "t_k": {
+      "a2": "180",
+      "a1": "360",
+      "a0": 331,
+      "text": "180k^2 + 360k + 331"
+     },
+     "gap_k": {
+      "a1": 360,
+      "a0": 540
+     },
+     "w_k": {
+      "a1": 40,
+      "a0": 73,
+      "text": "73 + 40k"
+     },
+     "gap_over_w": {
+      "lam": "9",
+      "mu": "-117"
+     }
+    },
+    {
+     "t0": 414,
+     "gap0": 540,
+     "w0": 87,
+     "k_range": [
+      0,
+      23
+     ],
+     "t_k": {
+      "a2": "180",
+      "a1": "360",
+      "a0": 414,
+      "text": "180k^2 + 360k + 414"
+     },
+     "gap_k": {
+      "a1": 360,
+      "a0": 540
+     },
+     "w_k": {
+      "a1": 40,
+      "a0": 87,
+      "text": "87 + 40k"
+     },
+     "gap_over_w": {
+      "lam": "9",
+      "mu": "-243"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_r10/s6-7-8_g0120120123_p0.pre",
+    "per": "census_10/out/s2b_r10/s6-7-8_g0120120123_p0.pre.per",
+    "summary": "census_10/out/s2b_r10/s6-7-8_g0120120123_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "p7_12:s1-2-3-6-8_g0102211_p0",
+   "S1": [
+    1,
+    2,
+    3,
+    6,
+    8
+   ],
+   "g": {
+    "pre": 0,
+    "per": 7,
+    "pattern": [
+     0,
+     1,
+     0,
+     2,
+     2,
+     1,
+     1
+    ]
+   },
+   "g_realised": false,
+   "S2_example": null,
+   "q": 1,
+   "j0": 1,
+   "Delta": 14,
+   "s": 14,
+   "lam": "1",
+   "c": 5.2915,
+   "Delta_over_gper": "2",
+   "classes": [
+    {
+     "t0": 142,
+     "gap0": 70,
+     "w0": 63,
+     "k_range": [
+      0,
+      116
+     ],
+     "t_k": {
+      "a2": "7",
+      "a1": "63",
+      "a0": 142,
+      "text": "7k^2 + 63k + 142"
+     },
+     "gap_k": {
+      "a1": 14,
+      "a0": 70
+     },
+     "w_k": {
+      "a1": 14,
+      "a0": 63,
+      "text": "63 + 14k"
+     },
+     "gap_over_w": {
+      "lam": "1",
+      "mu": "7"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_p7_12/s1-2-3-6-8_g0102211_p0.pre",
+    "per": "census_10/out/s2b_p7_12/s1-2-3-6-8_g0102211_p0.pre.per",
+    "summary": "census_10/out/s2b_p7_12/s1-2-3-6-8_g0102211_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "p7_12:s1-2-3-6-8_g0122300_p0",
+   "S1": [
+    1,
+    2,
+    3,
+    6,
+    8
+   ],
+   "g": {
+    "pre": 0,
+    "per": 7,
+    "pattern": [
+     0,
+     1,
+     2,
+     2,
+     3,
+     0,
+     0
+    ]
+   },
+   "g_realised": false,
+   "S2_example": null,
+   "q": 1,
+   "j0": 1,
+   "Delta": 42,
+   "s": 84,
+   "lam": "2",
+   "c": 6.4807,
+   "Delta_over_gper": "6",
+   "classes": [
+    {
+     "t0": 414,
+     "gap0": 287,
+     "w0": 152,
+     "k_range": [
+      0,
+      46
+     ],
+     "t_k": {
+      "a2": "42",
+      "a1": "245",
+      "a0": 414,
+      "text": "42k^2 + 245k + 414"
+     },
+     "gap_k": {
+      "a1": 84,
+      "a0": 287
+     },
+     "w_k": {
+      "a1": 42,
+      "a0": 152,
+      "text": "152 + 42k"
+     },
+     "gap_over_w": {
+      "lam": "2",
+      "mu": "-17"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_p7_12/s1-2-3-6-8_g0122300_p0.pre",
+    "per": "census_10/out/s2b_p7_12/s1-2-3-6-8_g0122300_p0.pre.per",
+    "summary": "census_10/out/s2b_p7_12/s1-2-3-6-8_g0122300_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  },
+  {
+   "tag": "p78_rand:s4-5-6-7-8-10_g01000022_p0",
+   "S1": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    10
+   ],
+   "g": {
+    "pre": 0,
+    "per": 8,
+    "pattern": [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     2,
+     2
+    ]
+   },
+   "g_realised": false,
+   "S2_example": null,
+   "q": 2,
+   "j0": 1,
+   "Delta": 48,
+   "s": 96,
+   "lam": "2",
+   "c": 6.9282,
+   "Delta_over_gper": "6",
+   "classes": [
+    {
+     "t0": 273,
+     "gap0": 400,
+     "w0": 96,
+     "k_range": [
+      0,
+      43
+     ],
+     "t_k": {
+      "a2": "48",
+      "a1": "352",
+      "a0": 273,
+      "text": "48k^2 + 352k + 273"
+     },
+     "gap_k": {
+      "a1": 96,
+      "a0": 400
+     },
+     "w_k": {
+      "a1": 48,
+      "a0": 96,
+      "text": "96 + 48k"
+     },
+     "gap_over_w": {
+      "lam": "2",
+      "mu": "208"
+     }
+    },
+    {
+     "t0": 457,
+     "gap0": 448,
+     "w0": 120,
+     "k_range": [
+      0,
+      42
+     ],
+     "t_k": {
+      "a2": "48",
+      "a1": "400",
+      "a0": 457,
+      "text": "48k^2 + 400k + 457"
+     },
+     "gap_k": {
+      "a1": 96,
+      "a0": 448
+     },
+     "w_k": {
+      "a1": 48,
+      "a0": 120,
+      "text": "120 + 48k"
+     },
+     "gap_over_w": {
+      "lam": "2",
+      "mu": "208"
+     }
+    }
+   ],
+   "scan": {
+    "N": 100000,
+    "D": 8000,
+    "PMAX": 400,
+    "status": "ok",
+    "a_stop": 100000
+   },
+   "files": {
+    "pre": "census_10/out/s2b_p78_rand/s4-5-6-7-8-10_g01000022_p0.pre",
+    "per": "census_10/out/s2b_p78_rand/s4-5-6-7-8-10_g01000022_p0.pre.per",
+    "summary": "census_10/out/s2b_p78_rand/s4-5-6-7-8-10_g01000022_p0.json"
+   },
+   "legs": null,
+   "legs_note": "leg speeds measured only for A (6/5 + 1/5) and B (1 + 0); others not measured"
+  }
+ ]
+}

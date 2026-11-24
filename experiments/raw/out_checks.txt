@@ -1,0 +1,26 @@
+N=300, ordered cells per layer=90601
+W=>N P == {(floor(n phi)-1, floor(n phi)-1+n)} sym: True size 230
+W=>N == Wythoff-P with (n phi) shift: differs from Wythoff P: True
+W=>N: P == {(a,b): (a+1,b+1)...}? checks b-a = n and a=floor(n*phi)-1 -> above
+N=>W == misere Nim: True
+N=>E P == {(a,a): a>=1}: True
+N=>E=>W P == diagonal: True
+N=>W=>E P == diag minus (2,2) plus (1,2),(2,1) minus (1,1)?: True size 301
+N=>W=>E has (1,2)? True  (1,1)? False  (2,2)? False
+W=>N=>E == Wythoff P: True | W=>E=>N == Wythoff P: True
+W=>E == W=>N with (0,1)->(1,1): True
+E=>N == E=>W: True
+E=>N=>W == E=>W=>N: True
+E=>N=>W == E=>N + (0,0),(1,1) - (0,1): True
+E=>N P == {(0,b)} u {a<b<=floor(phi*a), a>=2} (sym), exact float floor: True size 34792
+   first mismatches: [] | #mismatch: 0
+   same with integer floor((a+sqrt(5a^2))/2): True
+cycle start n: P_k == P_(k+2) for k=0..6: True
+cycle start w: P_k == P_(k+2) for k=0..6: True
+cycle Nim start: even k == Nim P (a==b): True ; odd k == misere Nim: True
+cycle Wythoff start: even k == Wythoff P: True ; odd k == W=>N: True
+C unlimited cycle N=150: cells P/N/draw per mode: {'n': (0, 0, 22801), 'w': (0, 0, 22801)}
+C extra n<->w, w->e (e sink) {'n': (1, 300, 22500), 'e': (8803, 13998, 0), 'w': (0, 8803, 13998)} (P,N,D) over ordered cells N=150
+C extra n<->w, n->e (e sink) {'n': (150, 22651, 0), 'e': (8803, 13998, 0), 'w': (115, 22686, 0)} (P,N,D) over ordered cells N=150
+C extra n->n self loop only {'n': (0, 0, 22801)} (P,N,D) over ordered cells N=150
+C extra e<->n {'e': (0, 0, 22801), 'n': (0, 0, 22801)} (P,N,D) over ordered cells N=150

@@ -1,0 +1,13 @@
+offset2, row 5 = far only: growing 0.49/19
+offset2, row 5 = far + 2,3,7 (shift 2): bounded 0.00/None
+offset2, row 5 = far + 2: bounded 0.00/None
+offset2, row 5 = far + 3: growing 0.49/19
+offset2, row 5 = far + 7: growing 0.49/19
+offset2, row 5 = far + 2,3: bounded 0.00/None
+offset2, row 5 = far + 2,7: bounded 0.00/None
+offset2, row 5 = far + 3,7: growing 0.49/19
+offset2, row 5 = its own offset-2 cells but far residue 4 from 9: bounded 0.00/None
+offset0, row 5 far residue 2: growing 0.51/15
+offset1, row 5 far residue 3: bounded 0.00/None
+offset3, row 5 far residue 0: bounded 0.00/None
+offset4, row 5 far residue 1: bounded 0.00/None
